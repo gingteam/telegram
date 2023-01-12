@@ -1,0 +1,26 @@
+{
+    "name": "gingteam/telegram",
+    "authors": [
+        {
+            "name": "Thanh Tran",
+            "email": "thanh1101dev@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "GingTeam\\Telegram\\": "src/"
+        }
+    },
+    "require": {
+        "symfony/http-client": "^6.2",
+        "symfony/serializer": "^6.2",
+        "symfony/property-access": "^6.2"
+    },
+    "require-dev": {
+        "symfony/string": "^6.2",
+        "friendsofphp/php-cs-fixer": "^3.13",
+        "symfony/var-dumper": "^6.2",
+        "nette/php-generator": "^4.0",
+        "vimeo/psalm": "^5.4"
+    }
+}
