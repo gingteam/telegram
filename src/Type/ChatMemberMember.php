@@ -5,7 +5,7 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents a chat member that has no additional privileges or restrictions.
  */
-class ChatMemberMember implements ChatMember
+class ChatMemberMember implements ChatMemberInterface
 {
     /**
      * @param string $status

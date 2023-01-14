@@ -5,19 +5,19 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents a link to a voice recording in an .OGG container encoded with OPUS. By default, this voice recording will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the the voice message.
  */
-class InlineQueryResultVoice implements InlineQueryResult
+class InlineQueryResultVoice implements InlineQueryResultInterface
 {
     /**
-     * @param string                    $type
-     * @param string                    $id
-     * @param string                    $voice_url
-     * @param string                    $title
-     * @param string|null               $caption
-     * @param string|null               $parse_mode
-     * @param MessageEntity[]|null      $caption_entities
-     * @param int|null                  $voice_duration
-     * @param InlineKeyboardMarkup|null $reply_markup
-     * @param InputMessageContent|null  $input_message_content
+     * @param string                            $type
+     * @param string                            $id
+     * @param string                            $voice_url
+     * @param string                            $title
+     * @param string|null                       $caption
+     * @param string|null                       $parse_mode
+     * @param MessageEntity[]|null              $caption_entities
+     * @param int|null                          $voice_duration
+     * @param InlineKeyboardMarkup|null         $reply_markup
+     * @param InputMessageContentInterface|null $input_message_content
      */
     public function __construct(
         private $type,
@@ -110,7 +110,7 @@ class InlineQueryResultVoice implements InlineQueryResult
     /**
      * Optional. Content of the message to be sent instead of the voice recording.
      */
-    public function getInputMessageContent(): ?InputMessageContent
+    public function getInputMessageContent(): ?InputMessageContentInterface
     {
         return $this->input_message_content;
     }

@@ -5,7 +5,7 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents the content of a location message to be sent as the result of an inline query.
  */
-class InputLocationMessageContent implements InputMessageContent
+class InputLocationMessageContent implements InputMessageContentInterface
 {
     /**
      * @param float      $latitude

@@ -5,17 +5,17 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents a link to an MP3 audio file stored on the Telegram servers. By default, this audio file will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the audio.
  */
-class InlineQueryResultCachedAudio implements InlineQueryResult
+class InlineQueryResultCachedAudio implements InlineQueryResultInterface
 {
     /**
-     * @param string                    $type
-     * @param string                    $id
-     * @param string                    $audio_file_id
-     * @param string|null               $caption
-     * @param string|null               $parse_mode
-     * @param MessageEntity[]|null      $caption_entities
-     * @param InlineKeyboardMarkup|null $reply_markup
-     * @param InputMessageContent|null  $input_message_content
+     * @param string                            $type
+     * @param string                            $id
+     * @param string                            $audio_file_id
+     * @param string|null                       $caption
+     * @param string|null                       $parse_mode
+     * @param MessageEntity[]|null              $caption_entities
+     * @param InlineKeyboardMarkup|null         $reply_markup
+     * @param InputMessageContentInterface|null $input_message_content
      */
     public function __construct(
         private $type,
@@ -90,7 +90,7 @@ class InlineQueryResultCachedAudio implements InlineQueryResult
     /**
      * Optional. Content of the message to be sent instead of the audio.
      */
-    public function getInputMessageContent(): ?InputMessageContent
+    public function getInputMessageContent(): ?InputMessageContentInterface
     {
         return $this->input_message_content;
     }

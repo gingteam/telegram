@@ -64,10 +64,10 @@ class Message
      * @param PassportData|null                  $passport_data
      * @param ProximityAlertTriggered|null       $proximity_alert_triggered
      * @param ForumTopicCreated|null             $forum_topic_created
-     * @param ForumTopicClosed|null              $forum_topic_closed
-     * @param ForumTopicReopened|null            $forum_topic_reopened
+     * @param ForumTopicClosedInterface|null     $forum_topic_closed
+     * @param ForumTopicReopenedInterface|null   $forum_topic_reopened
      * @param VideoChatScheduled|null            $video_chat_scheduled
-     * @param VideoChatStarted|null              $video_chat_started
+     * @param VideoChatStartedInterface|null     $video_chat_started
      * @param VideoChatEnded|null                $video_chat_ended
      * @param VideoChatParticipantsInvited|null  $video_chat_participants_invited
      * @param WebAppData|null                    $web_app_data
@@ -602,7 +602,7 @@ class Message
     /**
      * Optional. Service message: forum topic closed.
      */
-    public function getForumTopicClosed(): ?ForumTopicClosed
+    public function getForumTopicClosed(): ?ForumTopicClosedInterface
     {
         return $this->forum_topic_closed;
     }
@@ -610,7 +610,7 @@ class Message
     /**
      * Optional. Service message: forum topic reopened.
      */
-    public function getForumTopicReopened(): ?ForumTopicReopened
+    public function getForumTopicReopened(): ?ForumTopicReopenedInterface
     {
         return $this->forum_topic_reopened;
     }
@@ -626,7 +626,7 @@ class Message
     /**
      * Optional. Service message: video chat started.
      */
-    public function getVideoChatStarted(): ?VideoChatStarted
+    public function getVideoChatStarted(): ?VideoChatStartedInterface
     {
         return $this->video_chat_started;
     }

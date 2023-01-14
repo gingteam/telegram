@@ -5,18 +5,18 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents an audio file to be treated as music to be sent.
  */
-class InputMediaAudio implements InputMedia
+class InputMediaAudio implements InputMediaInterface
 {
     /**
-     * @param string                $type
-     * @param string                $media
-     * @param InputFile|string|null $thumb
-     * @param string|null           $caption
-     * @param string|null           $parse_mode
-     * @param MessageEntity[]|null  $caption_entities
-     * @param int|null              $duration
-     * @param string|null           $performer
-     * @param string|null           $title
+     * @param string                         $type
+     * @param string                         $media
+     * @param InputFileInterface|string|null $thumb
+     * @param string|null                    $caption
+     * @param string|null                    $parse_mode
+     * @param MessageEntity[]|null           $caption_entities
+     * @param int|null                       $duration
+     * @param string|null                    $performer
+     * @param string|null                    $title
      */
     public function __construct(
         private $type,
@@ -50,7 +50,7 @@ class InputMediaAudio implements InputMedia
     /**
      * Optional. Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass “attach://<file_attach_name>” if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More information on Sending Files ».
      *
-     * @return InputFile|string|null
+     * @return InputFileInterface|string|null
      */
     public function getThumb()
     {

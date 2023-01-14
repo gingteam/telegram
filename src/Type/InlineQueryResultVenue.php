@@ -5,24 +5,24 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents a venue. By default, the venue will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the venue.
  */
-class InlineQueryResultVenue implements InlineQueryResult
+class InlineQueryResultVenue implements InlineQueryResultInterface
 {
     /**
-     * @param string                    $type
-     * @param string                    $id
-     * @param float                     $latitude
-     * @param float                     $longitude
-     * @param string                    $title
-     * @param string                    $address
-     * @param string|null               $foursquare_id
-     * @param string|null               $foursquare_type
-     * @param string|null               $google_place_id
-     * @param string|null               $google_place_type
-     * @param InlineKeyboardMarkup|null $reply_markup
-     * @param InputMessageContent|null  $input_message_content
-     * @param string|null               $thumb_url
-     * @param int|null                  $thumb_width
-     * @param int|null                  $thumb_height
+     * @param string                            $type
+     * @param string                            $id
+     * @param float                             $latitude
+     * @param float                             $longitude
+     * @param string                            $title
+     * @param string                            $address
+     * @param string|null                       $foursquare_id
+     * @param string|null                       $foursquare_type
+     * @param string|null                       $google_place_id
+     * @param string|null                       $google_place_type
+     * @param InlineKeyboardMarkup|null         $reply_markup
+     * @param InputMessageContentInterface|null $input_message_content
+     * @param string|null                       $thumb_url
+     * @param int|null                          $thumb_width
+     * @param int|null                          $thumb_height
      */
     public function __construct(
         private $type,
@@ -134,7 +134,7 @@ class InlineQueryResultVenue implements InlineQueryResult
     /**
      * Optional. Content of the message to be sent instead of the venue.
      */
-    public function getInputMessageContent(): ?InputMessageContent
+    public function getInputMessageContent(): ?InputMessageContentInterface
     {
         return $this->input_message_content;
     }

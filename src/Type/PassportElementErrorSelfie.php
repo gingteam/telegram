@@ -5,7 +5,7 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents an issue with the selfie with a document. The error is considered resolved when the file with the selfie changes.
  */
-class PassportElementErrorSelfie implements PassportElementError
+class PassportElementErrorSelfie implements PassportElementErrorInterface
 {
     /**
      * @param string $source

@@ -8,15 +8,15 @@ namespace GingTeam\Telegram\Type;
 class InlineKeyboardButton
 {
     /**
-     * @param string            $text
-     * @param string|null       $url
-     * @param string|null       $callback_data
-     * @param WebAppInfo|null   $web_app
-     * @param LoginUrl|null     $login_url
-     * @param string|null       $switch_inline_query
-     * @param string|null       $switch_inline_query_current_chat
-     * @param CallbackGame|null $callback_game
-     * @param bool|null         $pay
+     * @param string                     $text
+     * @param string|null                $url
+     * @param string|null                $callback_data
+     * @param WebAppInfo|null            $web_app
+     * @param LoginUrl|null              $login_url
+     * @param string|null                $switch_inline_query
+     * @param string|null                $switch_inline_query_current_chat
+     * @param CallbackGameInterface|null $callback_game
+     * @param bool|null                  $pay
      */
     public function __construct(
         private $text,
@@ -90,7 +90,7 @@ class InlineKeyboardButton
     /**
      * Optional. Description of the game that will be launched when the user presses the button.NOTE: This type of button must always be the first button in the first row.
      */
-    public function getCallbackGame(): ?CallbackGame
+    public function getCallbackGame(): ?CallbackGameInterface
     {
         return $this->callback_game;
     }

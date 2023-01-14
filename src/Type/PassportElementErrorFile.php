@@ -5,7 +5,7 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents an issue with a document scan. The error is considered resolved when the file with the document scan changes.
  */
-class PassportElementErrorFile implements PassportElementError
+class PassportElementErrorFile implements PassportElementErrorInterface
 {
     /**
      * @param string $source

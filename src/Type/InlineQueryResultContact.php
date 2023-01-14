@@ -5,20 +5,20 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents a contact with a phone number. By default, this contact will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the contact.
  */
-class InlineQueryResultContact implements InlineQueryResult
+class InlineQueryResultContact implements InlineQueryResultInterface
 {
     /**
-     * @param string                    $type
-     * @param string                    $id
-     * @param string                    $phone_number
-     * @param string                    $first_name
-     * @param string|null               $last_name
-     * @param string|null               $vcard
-     * @param InlineKeyboardMarkup|null $reply_markup
-     * @param InputMessageContent|null  $input_message_content
-     * @param string|null               $thumb_url
-     * @param int|null                  $thumb_width
-     * @param int|null                  $thumb_height
+     * @param string                            $type
+     * @param string                            $id
+     * @param string                            $phone_number
+     * @param string                            $first_name
+     * @param string|null                       $last_name
+     * @param string|null                       $vcard
+     * @param InlineKeyboardMarkup|null         $reply_markup
+     * @param InputMessageContentInterface|null $input_message_content
+     * @param string|null                       $thumb_url
+     * @param int|null                          $thumb_width
+     * @param int|null                          $thumb_height
      */
     public function __construct(
         private $type,
@@ -94,7 +94,7 @@ class InlineQueryResultContact implements InlineQueryResult
     /**
      * Optional. Content of the message to be sent instead of the contact.
      */
-    public function getInputMessageContent(): ?InputMessageContent
+    public function getInputMessageContent(): ?InputMessageContentInterface
     {
         return $this->input_message_content;
     }

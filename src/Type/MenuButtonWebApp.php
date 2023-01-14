@@ -5,7 +5,7 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents a menu button, which launches a Web App.
  */
-class MenuButtonWebApp implements MenuButton
+class MenuButtonWebApp implements MenuButtonInterface
 {
     /**
      * @param string     $type

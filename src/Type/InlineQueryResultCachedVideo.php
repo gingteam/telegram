@@ -5,19 +5,19 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents a link to a video file stored on the Telegram servers. By default, this video file will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the video.
  */
-class InlineQueryResultCachedVideo implements InlineQueryResult
+class InlineQueryResultCachedVideo implements InlineQueryResultInterface
 {
     /**
-     * @param string                    $type
-     * @param string                    $id
-     * @param string                    $video_file_id
-     * @param string                    $title
-     * @param string|null               $description
-     * @param string|null               $caption
-     * @param string|null               $parse_mode
-     * @param MessageEntity[]|null      $caption_entities
-     * @param InlineKeyboardMarkup|null $reply_markup
-     * @param InputMessageContent|null  $input_message_content
+     * @param string                            $type
+     * @param string                            $id
+     * @param string                            $video_file_id
+     * @param string                            $title
+     * @param string|null                       $description
+     * @param string|null                       $caption
+     * @param string|null                       $parse_mode
+     * @param MessageEntity[]|null              $caption_entities
+     * @param InlineKeyboardMarkup|null         $reply_markup
+     * @param InputMessageContentInterface|null $input_message_content
      */
     public function __construct(
         private $type,
@@ -110,7 +110,7 @@ class InlineQueryResultCachedVideo implements InlineQueryResult
     /**
      * Optional. Content of the message to be sent instead of the video.
      */
-    public function getInputMessageContent(): ?InputMessageContent
+    public function getInputMessageContent(): ?InputMessageContentInterface
     {
         return $this->input_message_content;
     }

@@ -5,23 +5,23 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents a link to an animated GIF file. By default, this animated GIF file will be sent by the user with optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the animation.
  */
-class InlineQueryResultGif implements InlineQueryResult
+class InlineQueryResultGif implements InlineQueryResultInterface
 {
     /**
-     * @param string                    $type
-     * @param string                    $id
-     * @param string                    $gif_url
-     * @param string                    $thumb_url
-     * @param int|null                  $gif_width
-     * @param int|null                  $gif_height
-     * @param int|null                  $gif_duration
-     * @param string|null               $thumb_mime_type
-     * @param string|null               $title
-     * @param string|null               $caption
-     * @param string|null               $parse_mode
-     * @param MessageEntity[]|null      $caption_entities
-     * @param InlineKeyboardMarkup|null $reply_markup
-     * @param InputMessageContent|null  $input_message_content
+     * @param string                            $type
+     * @param string                            $id
+     * @param string                            $gif_url
+     * @param string                            $thumb_url
+     * @param int|null                          $gif_width
+     * @param int|null                          $gif_height
+     * @param int|null                          $gif_duration
+     * @param string|null                       $thumb_mime_type
+     * @param string|null                       $title
+     * @param string|null                       $caption
+     * @param string|null                       $parse_mode
+     * @param MessageEntity[]|null              $caption_entities
+     * @param InlineKeyboardMarkup|null         $reply_markup
+     * @param InputMessageContentInterface|null $input_message_content
      */
     public function __construct(
         private $type,
@@ -150,7 +150,7 @@ class InlineQueryResultGif implements InlineQueryResult
     /**
      * Optional. Content of the message to be sent instead of the GIF animation.
      */
-    public function getInputMessageContent(): ?InputMessageContent
+    public function getInputMessageContent(): ?InputMessageContentInterface
     {
         return $this->input_message_content;
     }

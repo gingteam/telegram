@@ -5,7 +5,7 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents a menu button, which opens the bot's list of commands.
  */
-class MenuButtonCommands implements MenuButton
+class MenuButtonCommands implements MenuButtonInterface
 {
     /**
      * @param string $type

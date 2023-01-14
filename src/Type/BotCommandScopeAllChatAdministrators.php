@@ -5,7 +5,7 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents the scope of bot commands, covering all group and supergroup chat administrators.
  */
-class BotCommandScopeAllChatAdministrators implements BotCommandScope
+class BotCommandScopeAllChatAdministrators implements BotCommandScopeInterface
 {
     /**
      * @param string $type

@@ -5,20 +5,20 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents a link to an article or web page.
  */
-class InlineQueryResultArticle implements InlineQueryResult
+class InlineQueryResultArticle implements InlineQueryResultInterface
 {
     /**
-     * @param string                    $type
-     * @param string                    $id
-     * @param string                    $title
-     * @param InputMessageContent       $input_message_content
-     * @param InlineKeyboardMarkup|null $reply_markup
-     * @param string|null               $url
-     * @param bool|null                 $hide_url
-     * @param string|null               $description
-     * @param string|null               $thumb_url
-     * @param int|null                  $thumb_width
-     * @param int|null                  $thumb_height
+     * @param string                       $type
+     * @param string                       $id
+     * @param string                       $title
+     * @param InputMessageContentInterface $input_message_content
+     * @param InlineKeyboardMarkup|null    $reply_markup
+     * @param string|null                  $url
+     * @param bool|null                    $hide_url
+     * @param string|null                  $description
+     * @param string|null                  $thumb_url
+     * @param int|null                     $thumb_width
+     * @param int|null                     $thumb_height
      */
     public function __construct(
         private $type,
@@ -62,7 +62,7 @@ class InlineQueryResultArticle implements InlineQueryResult
     /**
      * Content of the message to be sent.
      */
-    public function getInputMessageContent(): InputMessageContent
+    public function getInputMessageContent(): InputMessageContentInterface
     {
         return $this->input_message_content;
     }

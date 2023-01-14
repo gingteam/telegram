@@ -5,7 +5,7 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents a chat member that is under certain restrictions in the chat. Supergroups only.
  */
-class ChatMemberRestricted implements ChatMember
+class ChatMemberRestricted implements ChatMemberInterface
 {
     /**
      * @param string $status

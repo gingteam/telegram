@@ -5,19 +5,19 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents a video to be sent.
  */
-class InputMediaVideo implements InputMedia
+class InputMediaVideo implements InputMediaInterface
 {
     /**
-     * @param string                $type
-     * @param string                $media
-     * @param InputFile|string|null $thumb
-     * @param string|null           $caption
-     * @param string|null           $parse_mode
-     * @param MessageEntity[]|null  $caption_entities
-     * @param int|null              $width
-     * @param int|null              $height
-     * @param int|null              $duration
-     * @param bool|null             $supports_streaming
+     * @param string                         $type
+     * @param string                         $media
+     * @param InputFileInterface|string|null $thumb
+     * @param string|null                    $caption
+     * @param string|null                    $parse_mode
+     * @param MessageEntity[]|null           $caption_entities
+     * @param int|null                       $width
+     * @param int|null                       $height
+     * @param int|null                       $duration
+     * @param bool|null                      $supports_streaming
      */
     public function __construct(
         private $type,
@@ -52,7 +52,7 @@ class InputMediaVideo implements InputMedia
     /**
      * Optional. Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass “attach://<file_attach_name>” if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More information on Sending Files ».
      *
-     * @return InputFile|string|null
+     * @return InputFileInterface|string|null
      */
     public function getThumb()
     {

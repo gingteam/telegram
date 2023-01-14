@@ -5,7 +5,7 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents an issue with the reverse side of a document. The error is considered resolved when the file with reverse side of the document changes.
  */
-class PassportElementErrorReverseSide implements PassportElementError
+class PassportElementErrorReverseSide implements PassportElementErrorInterface
 {
     /**
      * @param string $source

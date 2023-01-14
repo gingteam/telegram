@@ -5,7 +5,7 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents a Game.
  */
-class InlineQueryResultGame implements InlineQueryResult
+class InlineQueryResultGame implements InlineQueryResultInterface
 {
     /**
      * @param string                    $type

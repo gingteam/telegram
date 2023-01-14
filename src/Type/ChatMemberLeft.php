@@ -5,7 +5,7 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents a chat member that isn't currently a member of the chat, but may join it themselves.
  */
-class ChatMemberLeft implements ChatMember
+class ChatMemberLeft implements ChatMemberInterface
 {
     /**
      * @param string $status

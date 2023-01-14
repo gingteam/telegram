@@ -5,23 +5,23 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents a link to a file. By default, this file will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the file. Currently, only .PDF and .ZIP files can be sent using this method.
  */
-class InlineQueryResultDocument implements InlineQueryResult
+class InlineQueryResultDocument implements InlineQueryResultInterface
 {
     /**
-     * @param string                    $type
-     * @param string                    $id
-     * @param string                    $title
-     * @param string                    $document_url
-     * @param string                    $mime_type
-     * @param string|null               $caption
-     * @param string|null               $parse_mode
-     * @param MessageEntity[]|null      $caption_entities
-     * @param string|null               $description
-     * @param InlineKeyboardMarkup|null $reply_markup
-     * @param InputMessageContent|null  $input_message_content
-     * @param string|null               $thumb_url
-     * @param int|null                  $thumb_width
-     * @param int|null                  $thumb_height
+     * @param string                            $type
+     * @param string                            $id
+     * @param string                            $title
+     * @param string                            $document_url
+     * @param string                            $mime_type
+     * @param string|null                       $caption
+     * @param string|null                       $parse_mode
+     * @param MessageEntity[]|null              $caption_entities
+     * @param string|null                       $description
+     * @param InlineKeyboardMarkup|null         $reply_markup
+     * @param InputMessageContentInterface|null $input_message_content
+     * @param string|null                       $thumb_url
+     * @param int|null                          $thumb_width
+     * @param int|null                          $thumb_height
      */
     public function __construct(
         private $type,
@@ -126,7 +126,7 @@ class InlineQueryResultDocument implements InlineQueryResult
     /**
      * Optional. Content of the message to be sent instead of the file.
      */
-    public function getInputMessageContent(): ?InputMessageContent
+    public function getInputMessageContent(): ?InputMessageContentInterface
     {
         return $this->input_message_content;
     }

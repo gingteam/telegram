@@ -5,7 +5,7 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents the content of a contact message to be sent as the result of an inline query.
  */
-class InputContactMessageContent implements InputMessageContent
+class InputContactMessageContent implements InputMessageContentInterface
 {
     /**
      * @param string      $phone_number

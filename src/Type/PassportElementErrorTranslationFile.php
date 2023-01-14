@@ -5,7 +5,7 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents an issue with one of the files that constitute the translation of a document. The error is considered resolved when the file changes.
  */
-class PassportElementErrorTranslationFile implements PassportElementError
+class PassportElementErrorTranslationFile implements PassportElementErrorInterface
 {
     /**
      * @param string $source

@@ -3,31 +3,31 @@
 namespace GingTeam\Telegram;
 
 use GingTeam\Telegram\Type\BotCommand;
-use GingTeam\Telegram\Type\BotCommandScope;
+use GingTeam\Telegram\Type\BotCommandScopeInterface;
 use GingTeam\Telegram\Type\Chat;
 use GingTeam\Telegram\Type\ChatAdministratorRights;
 use GingTeam\Telegram\Type\ChatInviteLink;
-use GingTeam\Telegram\Type\ChatMember;
+use GingTeam\Telegram\Type\ChatMemberInterface;
 use GingTeam\Telegram\Type\ChatPermissions;
 use GingTeam\Telegram\Type\File;
 use GingTeam\Telegram\Type\ForceReply;
 use GingTeam\Telegram\Type\ForumTopic;
 use GingTeam\Telegram\Type\GameHighScore;
 use GingTeam\Telegram\Type\InlineKeyboardMarkup;
-use GingTeam\Telegram\Type\InlineQueryResult;
-use GingTeam\Telegram\Type\InputFile;
-use GingTeam\Telegram\Type\InputMedia;
+use GingTeam\Telegram\Type\InlineQueryResultInterface;
+use GingTeam\Telegram\Type\InputFileInterface;
 use GingTeam\Telegram\Type\InputMediaAudio;
 use GingTeam\Telegram\Type\InputMediaDocument;
+use GingTeam\Telegram\Type\InputMediaInterface;
 use GingTeam\Telegram\Type\InputMediaPhoto;
 use GingTeam\Telegram\Type\InputMediaVideo;
 use GingTeam\Telegram\Type\LabeledPrice;
 use GingTeam\Telegram\Type\MaskPosition;
-use GingTeam\Telegram\Type\MenuButton;
+use GingTeam\Telegram\Type\MenuButtonInterface;
 use GingTeam\Telegram\Type\Message;
 use GingTeam\Telegram\Type\MessageEntity;
 use GingTeam\Telegram\Type\MessageId;
-use GingTeam\Telegram\Type\PassportElementError;
+use GingTeam\Telegram\Type\PassportElementErrorInterface;
 use GingTeam\Telegram\Type\Poll;
 use GingTeam\Telegram\Type\ReplyKeyboardMarkup;
 use GingTeam\Telegram\Type\ReplyKeyboardRemove;
@@ -43,54 +43,54 @@ use GingTeam\Telegram\Type\WebhookInfo;
 trait TelegramTrait
 {
     private static $mapping = [
-        'getUpdates' => '\GingTeam\Telegram\Type\Update[]',
-        'getWebhookInfo' => '\GingTeam\Telegram\Type\WebhookInfo',
-        'getMe' => '\GingTeam\Telegram\Type\User',
-        'sendMessage' => '\GingTeam\Telegram\Type\Message',
-        'forwardMessage' => '\GingTeam\Telegram\Type\Message',
-        'copyMessage' => '\GingTeam\Telegram\Type\MessageId',
-        'sendPhoto' => '\GingTeam\Telegram\Type\Message',
-        'sendAudio' => '\GingTeam\Telegram\Type\Message',
-        'sendDocument' => '\GingTeam\Telegram\Type\Message',
-        'sendVideo' => '\GingTeam\Telegram\Type\Message',
-        'sendAnimation' => '\GingTeam\Telegram\Type\Message',
-        'sendVoice' => '\GingTeam\Telegram\Type\Message',
-        'sendVideoNote' => '\GingTeam\Telegram\Type\Message',
-        'sendMediaGroup' => '\GingTeam\Telegram\Type\Message[]',
-        'sendLocation' => '\GingTeam\Telegram\Type\Message',
-        'editMessageLiveLocation' => '\GingTeam\Telegram\Type\Message',
-        'stopMessageLiveLocation' => '\GingTeam\Telegram\Type\Message',
-        'sendVenue' => '\GingTeam\Telegram\Type\Message',
-        'sendContact' => '\GingTeam\Telegram\Type\Message',
-        'sendPoll' => '\GingTeam\Telegram\Type\Message',
-        'sendDice' => '\GingTeam\Telegram\Type\Message',
-        'getUserProfilePhotos' => '\GingTeam\Telegram\Type\UserProfilePhotos',
-        'getFile' => '\GingTeam\Telegram\Type\File',
-        'createChatInviteLink' => '\GingTeam\Telegram\Type\ChatInviteLink',
-        'editChatInviteLink' => '\GingTeam\Telegram\Type\ChatInviteLink',
-        'revokeChatInviteLink' => '\GingTeam\Telegram\Type\ChatInviteLink',
-        'getChat' => '\GingTeam\Telegram\Type\Chat',
-        'getChatAdministrators' => '\GingTeam\Telegram\Type\ChatMember[]',
-        'getChatMember' => '\GingTeam\Telegram\Type\ChatMember',
-        'getForumTopicIconStickers' => '\GingTeam\Telegram\Type\Sticker[]',
-        'createForumTopic' => '\GingTeam\Telegram\Type\ForumTopic',
-        'getMyCommands' => '\GingTeam\Telegram\Type\BotCommand[]',
-        'getChatMenuButton' => '\GingTeam\Telegram\Type\MenuButton',
-        'getMyDefaultAdministratorRights' => '\GingTeam\Telegram\Type\ChatAdministratorRights',
-        'editMessageText' => '\GingTeam\Telegram\Type\Message',
-        'editMessageCaption' => '\GingTeam\Telegram\Type\Message',
-        'editMessageMedia' => '\GingTeam\Telegram\Type\Message',
-        'editMessageReplyMarkup' => '\GingTeam\Telegram\Type\Message',
-        'stopPoll' => '\GingTeam\Telegram\Type\Poll',
-        'sendSticker' => '\GingTeam\Telegram\Type\Message',
-        'getStickerSet' => '\GingTeam\Telegram\Type\StickerSet',
-        'getCustomEmojiStickers' => '\GingTeam\Telegram\Type\Sticker[]',
-        'uploadStickerFile' => '\GingTeam\Telegram\Type\File',
-        'answerWebAppQuery' => '\GingTeam\Telegram\Type\SentWebAppMessage',
-        'sendInvoice' => '\GingTeam\Telegram\Type\Message',
-        'sendGame' => '\GingTeam\Telegram\Type\Message',
-        'setGameScore' => '\GingTeam\Telegram\Type\Message',
-        'getGameHighScores' => '\GingTeam\Telegram\Type\GameHighScore[]',
+        'getUpdates' => 'GingTeam\Telegram\Type\Update[]',
+        'getWebhookInfo' => 'GingTeam\Telegram\Type\WebhookInfo',
+        'getMe' => 'GingTeam\Telegram\Type\User',
+        'sendMessage' => 'GingTeam\Telegram\Type\Message',
+        'forwardMessage' => 'GingTeam\Telegram\Type\Message',
+        'copyMessage' => 'GingTeam\Telegram\Type\MessageId',
+        'sendPhoto' => 'GingTeam\Telegram\Type\Message',
+        'sendAudio' => 'GingTeam\Telegram\Type\Message',
+        'sendDocument' => 'GingTeam\Telegram\Type\Message',
+        'sendVideo' => 'GingTeam\Telegram\Type\Message',
+        'sendAnimation' => 'GingTeam\Telegram\Type\Message',
+        'sendVoice' => 'GingTeam\Telegram\Type\Message',
+        'sendVideoNote' => 'GingTeam\Telegram\Type\Message',
+        'sendMediaGroup' => 'GingTeam\Telegram\Type\Message[]',
+        'sendLocation' => 'GingTeam\Telegram\Type\Message',
+        'editMessageLiveLocation' => 'GingTeam\Telegram\Type\Message',
+        'stopMessageLiveLocation' => 'GingTeam\Telegram\Type\Message',
+        'sendVenue' => 'GingTeam\Telegram\Type\Message',
+        'sendContact' => 'GingTeam\Telegram\Type\Message',
+        'sendPoll' => 'GingTeam\Telegram\Type\Message',
+        'sendDice' => 'GingTeam\Telegram\Type\Message',
+        'getUserProfilePhotos' => 'GingTeam\Telegram\Type\UserProfilePhotos',
+        'getFile' => 'GingTeam\Telegram\Type\File',
+        'createChatInviteLink' => 'GingTeam\Telegram\Type\ChatInviteLink',
+        'editChatInviteLink' => 'GingTeam\Telegram\Type\ChatInviteLink',
+        'revokeChatInviteLink' => 'GingTeam\Telegram\Type\ChatInviteLink',
+        'getChat' => 'GingTeam\Telegram\Type\Chat',
+        'getChatAdministrators' => 'GingTeam\Telegram\Type\ChatMemberInterface[]',
+        'getChatMember' => 'GingTeam\Telegram\Type\ChatMemberInterface',
+        'getForumTopicIconStickers' => 'GingTeam\Telegram\Type\Sticker[]',
+        'createForumTopic' => 'GingTeam\Telegram\Type\ForumTopic',
+        'getMyCommands' => 'GingTeam\Telegram\Type\BotCommand[]',
+        'getChatMenuButton' => 'GingTeam\Telegram\Type\MenuButtonInterface',
+        'getMyDefaultAdministratorRights' => 'GingTeam\Telegram\Type\ChatAdministratorRights',
+        'editMessageText' => 'GingTeam\Telegram\Type\Message',
+        'editMessageCaption' => 'GingTeam\Telegram\Type\Message',
+        'editMessageMedia' => 'GingTeam\Telegram\Type\Message',
+        'editMessageReplyMarkup' => 'GingTeam\Telegram\Type\Message',
+        'stopPoll' => 'GingTeam\Telegram\Type\Poll',
+        'sendSticker' => 'GingTeam\Telegram\Type\Message',
+        'getStickerSet' => 'GingTeam\Telegram\Type\StickerSet',
+        'getCustomEmojiStickers' => 'GingTeam\Telegram\Type\Sticker[]',
+        'uploadStickerFile' => 'GingTeam\Telegram\Type\File',
+        'answerWebAppQuery' => 'GingTeam\Telegram\Type\SentWebAppMessage',
+        'sendInvoice' => 'GingTeam\Telegram\Type\Message',
+        'sendGame' => 'GingTeam\Telegram\Type\Message',
+        'setGameScore' => 'GingTeam\Telegram\Type\Message',
+        'getGameHighScores' => 'GingTeam\Telegram\Type\GameHighScore[]',
     ];
 
     abstract public function sendRequest(string $name, array $data = []);
@@ -110,7 +110,7 @@ trait TelegramTrait
      */
     public function setWebhook(
         string $url,
-        ?InputFile $certificate = null,
+        ?InputFileInterface $certificate = null,
         ?string $ip_address = null,
         ?int $max_connections = null,
         ?array $allowed_updates = null,
@@ -206,7 +206,7 @@ trait TelegramTrait
 
     /**
      * @param int|string                                                                   $chat_id
-     * @param InputFile|string                                                             $photo
+     * @param InputFileInterface|string                                                    $photo
      * @param MessageEntity[]|null                                                         $caption_entities
      * @param InlineKeyboardMarkup|ReplyKeyboardMarkup|ReplyKeyboardRemove|ForceReply|null $reply_markup
      */
@@ -229,9 +229,9 @@ trait TelegramTrait
 
     /**
      * @param int|string                                                                   $chat_id
-     * @param InputFile|string                                                             $audio
+     * @param InputFileInterface|string                                                    $audio
      * @param MessageEntity[]|null                                                         $caption_entities
-     * @param InputFile|string|null                                                        $thumb
+     * @param InputFileInterface|string|null                                               $thumb
      * @param InlineKeyboardMarkup|ReplyKeyboardMarkup|ReplyKeyboardRemove|ForceReply|null $reply_markup
      */
     public function sendAudio(
@@ -256,8 +256,8 @@ trait TelegramTrait
 
     /**
      * @param int|string                                                                   $chat_id
-     * @param InputFile|string                                                             $document
-     * @param InputFile|string|null                                                        $thumb
+     * @param InputFileInterface|string                                                    $document
+     * @param InputFileInterface|string|null                                               $thumb
      * @param MessageEntity[]|null                                                         $caption_entities
      * @param InlineKeyboardMarkup|ReplyKeyboardMarkup|ReplyKeyboardRemove|ForceReply|null $reply_markup
      */
@@ -281,8 +281,8 @@ trait TelegramTrait
 
     /**
      * @param int|string                                                                   $chat_id
-     * @param InputFile|string                                                             $video
-     * @param InputFile|string|null                                                        $thumb
+     * @param InputFileInterface|string                                                    $video
+     * @param InputFileInterface|string|null                                               $thumb
      * @param MessageEntity[]|null                                                         $caption_entities
      * @param InlineKeyboardMarkup|ReplyKeyboardMarkup|ReplyKeyboardRemove|ForceReply|null $reply_markup
      */
@@ -310,8 +310,8 @@ trait TelegramTrait
 
     /**
      * @param int|string                                                                   $chat_id
-     * @param InputFile|string                                                             $animation
-     * @param InputFile|string|null                                                        $thumb
+     * @param InputFileInterface|string                                                    $animation
+     * @param InputFileInterface|string|null                                               $thumb
      * @param MessageEntity[]|null                                                         $caption_entities
      * @param InlineKeyboardMarkup|ReplyKeyboardMarkup|ReplyKeyboardRemove|ForceReply|null $reply_markup
      */
@@ -338,7 +338,7 @@ trait TelegramTrait
 
     /**
      * @param int|string                                                                   $chat_id
-     * @param InputFile|string                                                             $voice
+     * @param InputFileInterface|string                                                    $voice
      * @param MessageEntity[]|null                                                         $caption_entities
      * @param InlineKeyboardMarkup|ReplyKeyboardMarkup|ReplyKeyboardRemove|ForceReply|null $reply_markup
      */
@@ -361,8 +361,8 @@ trait TelegramTrait
 
     /**
      * @param int|string                                                                   $chat_id
-     * @param InputFile|string                                                             $video_note
-     * @param InputFile|string|null                                                        $thumb
+     * @param InputFileInterface|string                                                    $video_note
+     * @param InputFileInterface|string|null                                               $thumb
      * @param InlineKeyboardMarkup|ReplyKeyboardMarkup|ReplyKeyboardRemove|ForceReply|null $reply_markup
      */
     public function sendVideoNote(
@@ -703,7 +703,7 @@ trait TelegramTrait
     /**
      * @param int|string $chat_id
      */
-    public function setChatPhoto($chat_id, InputFile $photo): bool
+    public function setChatPhoto($chat_id, InputFileInterface $photo): bool
     {
         return $this->sendRequest(__FUNCTION__, get_defined_vars());
     }
@@ -775,7 +775,7 @@ trait TelegramTrait
     /**
      * @param int|string $chat_id
      *
-     * @return ChatMember[]
+     * @return ChatMemberInterface[]
      */
     public function getChatAdministrators($chat_id): array
     {
@@ -793,7 +793,7 @@ trait TelegramTrait
     /**
      * @param int|string $chat_id
      */
-    public function getChatMember($chat_id, int $user_id): ChatMember
+    public function getChatMember($chat_id, int $user_id): ChatMemberInterface
     {
         return $this->sendRequest(__FUNCTION__, get_defined_vars());
     }
@@ -923,12 +923,12 @@ trait TelegramTrait
     /**
      * @param BotCommand[] $commands
      */
-    public function setMyCommands(array $commands, ?BotCommandScope $scope = null, ?string $language_code = null): bool
+    public function setMyCommands(array $commands, ?BotCommandScopeInterface $scope = null, ?string $language_code = null): bool
     {
         return $this->sendRequest(__FUNCTION__, get_defined_vars());
     }
 
-    public function deleteMyCommands(?BotCommandScope $scope = null, ?string $language_code = null): bool
+    public function deleteMyCommands(?BotCommandScopeInterface $scope = null, ?string $language_code = null): bool
     {
         return $this->sendRequest(__FUNCTION__, get_defined_vars());
     }
@@ -936,17 +936,17 @@ trait TelegramTrait
     /**
      * @return BotCommand[]
      */
-    public function getMyCommands(?BotCommandScope $scope = null, ?string $language_code = null): array
+    public function getMyCommands(?BotCommandScopeInterface $scope = null, ?string $language_code = null): array
     {
         return $this->sendRequest(__FUNCTION__, get_defined_vars());
     }
 
-    public function setChatMenuButton(?int $chat_id = null, ?MenuButton $menu_button = null): bool
+    public function setChatMenuButton(?int $chat_id = null, ?MenuButtonInterface $menu_button = null): bool
     {
         return $this->sendRequest(__FUNCTION__, get_defined_vars());
     }
 
-    public function getChatMenuButton(?int $chat_id = null): MenuButton
+    public function getChatMenuButton(?int $chat_id = null): MenuButtonInterface
     {
         return $this->sendRequest(__FUNCTION__, get_defined_vars());
     }
@@ -1004,7 +1004,7 @@ trait TelegramTrait
      * @return Message|bool
      */
     public function editMessageMedia(
-        InputMedia $media,
+        InputMediaInterface $media,
         $chat_id = null,
         ?int $message_id = null,
         ?string $inline_message_id = null,
@@ -1045,7 +1045,7 @@ trait TelegramTrait
 
     /**
      * @param int|string                                                                   $chat_id
-     * @param InputFile|string                                                             $sticker
+     * @param InputFileInterface|string                                                    $sticker
      * @param InlineKeyboardMarkup|ReplyKeyboardMarkup|ReplyKeyboardRemove|ForceReply|null $reply_markup
      */
     public function sendSticker(
@@ -1076,13 +1076,13 @@ trait TelegramTrait
         return $this->sendRequest(__FUNCTION__, get_defined_vars());
     }
 
-    public function uploadStickerFile(int $user_id, InputFile $png_sticker): File
+    public function uploadStickerFile(int $user_id, InputFileInterface $png_sticker): File
     {
         return $this->sendRequest(__FUNCTION__, get_defined_vars());
     }
 
     /**
-     * @param InputFile|string|null $png_sticker
+     * @param InputFileInterface|string|null $png_sticker
      */
     public function createNewStickerSet(
         int $user_id,
@@ -1090,8 +1090,8 @@ trait TelegramTrait
         string $title,
         string $emojis,
         $png_sticker = null,
-        ?InputFile $tgs_sticker = null,
-        ?InputFile $webm_sticker = null,
+        ?InputFileInterface $tgs_sticker = null,
+        ?InputFileInterface $webm_sticker = null,
         ?string $sticker_type = null,
         ?MaskPosition $mask_position = null,
     ): bool {
@@ -1099,15 +1099,15 @@ trait TelegramTrait
     }
 
     /**
-     * @param InputFile|string|null $png_sticker
+     * @param InputFileInterface|string|null $png_sticker
      */
     public function addStickerToSet(
         int $user_id,
         string $name,
         string $emojis,
         $png_sticker = null,
-        ?InputFile $tgs_sticker = null,
-        ?InputFile $webm_sticker = null,
+        ?InputFileInterface $tgs_sticker = null,
+        ?InputFileInterface $webm_sticker = null,
         ?MaskPosition $mask_position = null,
     ): bool {
         return $this->sendRequest(__FUNCTION__, get_defined_vars());
@@ -1124,7 +1124,7 @@ trait TelegramTrait
     }
 
     /**
-     * @param InputFile|string|null $thumb
+     * @param InputFileInterface|string|null $thumb
      */
     public function setStickerSetThumb(string $name, int $user_id, $thumb = null): bool
     {
@@ -1132,7 +1132,7 @@ trait TelegramTrait
     }
 
     /**
-     * @param InlineQueryResult[] $results
+     * @param InlineQueryResultInterface[] $results
      */
     public function answerInlineQuery(
         string $inline_query_id,
@@ -1146,7 +1146,7 @@ trait TelegramTrait
         return $this->sendRequest(__FUNCTION__, get_defined_vars());
     }
 
-    public function answerWebAppQuery(string $web_app_query_id, InlineQueryResult $result): SentWebAppMessage
+    public function answerWebAppQuery(string $web_app_query_id, InlineQueryResultInterface $result): SentWebAppMessage
     {
         return $this->sendRequest(__FUNCTION__, get_defined_vars());
     }
@@ -1232,7 +1232,7 @@ trait TelegramTrait
     }
 
     /**
-     * @param PassportElementError[] $errors
+     * @param PassportElementErrorInterface[] $errors
      */
     public function setPassportDataErrors(int $user_id, array $errors): bool
     {

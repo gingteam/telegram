@@ -5,7 +5,7 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents an issue in an unspecified place. The error is considered resolved when new data is added.
  */
-class PassportElementErrorUnspecified implements PassportElementError
+class PassportElementErrorUnspecified implements PassportElementErrorInterface
 {
     /**
      * @param string $source

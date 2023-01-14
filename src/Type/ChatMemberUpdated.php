@@ -11,8 +11,8 @@ class ChatMemberUpdated
      * @param Chat                $chat
      * @param User                $from
      * @param int                 $date
-     * @param ChatMember          $old_chat_member
-     * @param ChatMember          $new_chat_member
+     * @param ChatMemberInterface $old_chat_member
+     * @param ChatMemberInterface $new_chat_member
      * @param ChatInviteLink|null $invite_link
      */
     public function __construct(
@@ -52,7 +52,7 @@ class ChatMemberUpdated
     /**
      * Previous information about the chat member.
      */
-    public function getOldChatMember(): ChatMember
+    public function getOldChatMember(): ChatMemberInterface
     {
         return $this->old_chat_member;
     }
@@ -60,7 +60,7 @@ class ChatMemberUpdated
     /**
      * New information about the chat member.
      */
-    public function getNewChatMember(): ChatMember
+    public function getNewChatMember(): ChatMemberInterface
     {
         return $this->new_chat_member;
     }

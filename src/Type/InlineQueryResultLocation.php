@@ -5,23 +5,23 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents a location on a map. By default, the location will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the location.
  */
-class InlineQueryResultLocation implements InlineQueryResult
+class InlineQueryResultLocation implements InlineQueryResultInterface
 {
     /**
-     * @param string                    $type
-     * @param string                    $id
-     * @param float                     $latitude
-     * @param float                     $longitude
-     * @param string                    $title
-     * @param float|null                $horizontal_accuracy
-     * @param int|null                  $live_period
-     * @param int|null                  $heading
-     * @param int|null                  $proximity_alert_radius
-     * @param InlineKeyboardMarkup|null $reply_markup
-     * @param InputMessageContent|null  $input_message_content
-     * @param string|null               $thumb_url
-     * @param int|null                  $thumb_width
-     * @param int|null                  $thumb_height
+     * @param string                            $type
+     * @param string                            $id
+     * @param float                             $latitude
+     * @param float                             $longitude
+     * @param string                            $title
+     * @param float|null                        $horizontal_accuracy
+     * @param int|null                          $live_period
+     * @param int|null                          $heading
+     * @param int|null                          $proximity_alert_radius
+     * @param InlineKeyboardMarkup|null         $reply_markup
+     * @param InputMessageContentInterface|null $input_message_content
+     * @param string|null                       $thumb_url
+     * @param int|null                          $thumb_width
+     * @param int|null                          $thumb_height
      */
     public function __construct(
         private $type,
@@ -124,7 +124,7 @@ class InlineQueryResultLocation implements InlineQueryResult
     /**
      * Optional. Content of the message to be sent instead of the location.
      */
-    public function getInputMessageContent(): ?InputMessageContent
+    public function getInputMessageContent(): ?InputMessageContentInterface
     {
         return $this->input_message_content;
     }

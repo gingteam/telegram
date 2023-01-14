@@ -5,7 +5,7 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents a photo to be sent.
  */
-class InputMediaPhoto implements InputMedia
+class InputMediaPhoto implements InputMediaInterface
 {
     /**
      * @param string               $type

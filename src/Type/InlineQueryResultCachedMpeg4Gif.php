@@ -5,18 +5,18 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents a link to a video animation (H.264/MPEG-4 AVC video without sound) stored on the Telegram servers. By default, this animated MPEG-4 file will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the animation.
  */
-class InlineQueryResultCachedMpeg4Gif implements InlineQueryResult
+class InlineQueryResultCachedMpeg4Gif implements InlineQueryResultInterface
 {
     /**
-     * @param string                    $type
-     * @param string                    $id
-     * @param string                    $mpeg4_file_id
-     * @param string|null               $title
-     * @param string|null               $caption
-     * @param string|null               $parse_mode
-     * @param MessageEntity[]|null      $caption_entities
-     * @param InlineKeyboardMarkup|null $reply_markup
-     * @param InputMessageContent|null  $input_message_content
+     * @param string                            $type
+     * @param string                            $id
+     * @param string                            $mpeg4_file_id
+     * @param string|null                       $title
+     * @param string|null                       $caption
+     * @param string|null                       $parse_mode
+     * @param MessageEntity[]|null              $caption_entities
+     * @param InlineKeyboardMarkup|null         $reply_markup
+     * @param InputMessageContentInterface|null $input_message_content
      */
     public function __construct(
         private $type,
@@ -100,7 +100,7 @@ class InlineQueryResultCachedMpeg4Gif implements InlineQueryResult
     /**
      * Optional. Content of the message to be sent instead of the video animation.
      */
-    public function getInputMessageContent(): ?InputMessageContent
+    public function getInputMessageContent(): ?InputMessageContentInterface
     {
         return $this->input_message_content;
     }

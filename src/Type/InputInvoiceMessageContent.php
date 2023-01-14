@@ -5,7 +5,7 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents the content of an invoice message to be sent as the result of an inline query.
  */
-class InputInvoiceMessageContent implements InputMessageContent
+class InputInvoiceMessageContent implements InputMessageContentInterface
 {
     /**
      * @param string         $title

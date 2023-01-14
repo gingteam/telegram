@@ -5,7 +5,7 @@ namespace GingTeam\Telegram\Type;
 /**
  * Describes that no specific value for the menu button was set.
  */
-class MenuButtonDefault implements MenuButton
+class MenuButtonDefault implements MenuButtonInterface
 {
     /**
      * @param string $type

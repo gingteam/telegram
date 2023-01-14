@@ -5,14 +5,14 @@ namespace GingTeam\Telegram\Type;
 /**
  * Represents a link to a sticker stored on the Telegram servers. By default, this sticker will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the sticker.
  */
-class InlineQueryResultCachedSticker implements InlineQueryResult
+class InlineQueryResultCachedSticker implements InlineQueryResultInterface
 {
     /**
-     * @param string                    $type
-     * @param string                    $id
-     * @param string                    $sticker_file_id
-     * @param InlineKeyboardMarkup|null $reply_markup
-     * @param InputMessageContent|null  $input_message_content
+     * @param string                            $type
+     * @param string                            $id
+     * @param string                            $sticker_file_id
+     * @param InlineKeyboardMarkup|null         $reply_markup
+     * @param InputMessageContentInterface|null $input_message_content
      */
     public function __construct(
         private $type,
@@ -58,7 +58,7 @@ class InlineQueryResultCachedSticker implements InlineQueryResult
     /**
      * Optional. Content of the message to be sent instead of the sticker.
      */
-    public function getInputMessageContent(): ?InputMessageContent
+    public function getInputMessageContent(): ?InputMessageContentInterface
     {
         return $this->input_message_content;
     }
