@@ -6,6 +6,9 @@
 use GingTeam\Telegram\TelegramTrait;
 use Symfony\Component\HttpClient\HttpClient;
 use Symfony\Component\PropertyInfo\Extractor\ReflectionExtractor;
+use Symfony\Component\Serializer\Mapping\ClassDiscriminatorFromClassMetadata;
+use Symfony\Component\Serializer\Mapping\Factory\ClassMetadataFactory;
+use Symfony\Component\Serializer\Mapping\Loader\AnnotationLoader;
 use Symfony\Component\Serializer\Normalizer\ArrayDenormalizer;
 use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
 use Symfony\Component\Serializer\Serializer;
@@ -25,14 +28,18 @@ class SimpleTelegram
 
     public function __construct(private string $token, HttpClientInterface $client = null)
     {
-        $this->client = $client ?: HttpClient::create();
+        $classMetadataFactory = new ClassMetadataFactory(new AnnotationLoader());
+        $discriminator = new ClassDiscriminatorFromClassMetadata($classMetadataFactory);
         $this->serializer = new Serializer([
             new ObjectNormalizer(
+                classMetadataFactory: $classMetadataFactory,
                 propertyTypeExtractor: new ReflectionExtractor(),
+                classDiscriminatorResolver: $discriminator,
                 defaultContext: [ObjectNormalizer::SKIP_NULL_VALUES => true]
             ),
             new ArrayDenormalizer(),
         ]);
+        $this->client = $client ?: HttpClient::create();
     }
 
     public function sendRequest(string $name, array $data = [])
@@ -51,7 +58,7 @@ class SimpleTelegram
 
         $result = $response['result'];
 
-        return (is_bool($result))
+        return is_bool($result)
             ? $result
             : $this->serializer->denormalize($result, static::$mapping[$name]);
     }
