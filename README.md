@@ -1,11 +1,10 @@
 ## Example
 
 ```php
-<?php
-
 use GingTeam\Telegram\TelegramTrait;
+use GingTeam\Telegram\Type\Response;
 use Symfony\Component\HttpClient\HttpClient;
-use Symfony\Component\PropertyInfo\Extractor\ReflectionExtractor;
+use Symfony\Component\PropertyInfo\Extractor\PhpDocExtractor;
 use Symfony\Component\Serializer\Mapping\ClassDiscriminatorFromClassMetadata;
 use Symfony\Component\Serializer\Mapping\Factory\ClassMetadataFactory;
 use Symfony\Component\Serializer\Mapping\Loader\AnnotationLoader;
@@ -33,8 +32,8 @@ class SimpleTelegram
         $this->serializer = new Serializer([
             new ObjectNormalizer(
                 classMetadataFactory: $classMetadataFactory,
-                propertyTypeExtractor: new ReflectionExtractor(),
                 classDiscriminatorResolver: $discriminator,
+                propertyTypeExtractor: new PhpDocExtractor(),
                 defaultContext: [ObjectNormalizer::SKIP_NULL_VALUES => true]
             ),
             new ArrayDenormalizer(),
@@ -52,15 +51,14 @@ class SimpleTelegram
             'json' => $data,
         ])->toArray(false);
 
-        if (!$response['ok']) {
-            throw new RuntimeException($response['description']);
+        /** @var Response */
+        $response = $this->serializer->denormalize($response, Response::class);
+
+        if ($response->getErrorCode()) {
+            throw new RuntimeException($response->getDescription());
         }
 
-        $result = $response['result'];
-
-        return is_bool($result)
-            ? $result
-            : $this->serializer->denormalize($result, static::$mapping[$name]);
+        return $response->getResult();
     }
 }
 
