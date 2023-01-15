@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>GingTeam\Telegram\Type\Update | Telegram API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../doctum.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:GingTeam_Telegram_Type_Update" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Telegram API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../GingTeam.html">GingTeam</a></li><li class="backslash">\</li><li><a href="../../../GingTeam/Telegram.html">Telegram</a></li><li class="backslash">\</li><li><a href="../../../GingTeam/Telegram/Type.html">Type</a></li><li class="backslash">\</li><li>Update</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Update    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Update</strong>
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>This object represents an incoming update.At most one of the optional parameters can be present in any given update.</p></p>                    </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>(int $update_id, <a href="../../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>|null $message = null, <a href="../../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>|null $edited_message = null, <a href="../../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>|null $channel_post = null, <a href="../../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>|null $edited_channel_post = null, <a href="../../../GingTeam/Telegram/Type/InlineQuery.html"><abbr title="GingTeam\Telegram\Type\InlineQuery">InlineQuery</abbr></a>|null $inline_query = null, <a href="../../../GingTeam/Telegram/Type/ChosenInlineResult.html"><abbr title="GingTeam\Telegram\Type\ChosenInlineResult">ChosenInlineResult</abbr></a>|null $chosen_inline_result = null, <a href="../../../GingTeam/Telegram/Type/CallbackQuery.html"><abbr title="GingTeam\Telegram\Type\CallbackQuery">CallbackQuery</abbr></a>|null $callback_query = null, <a href="../../../GingTeam/Telegram/Type/ShippingQuery.html"><abbr title="GingTeam\Telegram\Type\ShippingQuery">ShippingQuery</abbr></a>|null $shipping_query = null, <a href="../../../GingTeam/Telegram/Type/PreCheckoutQuery.html"><abbr title="GingTeam\Telegram\Type\PreCheckoutQuery">PreCheckoutQuery</abbr></a>|null $pre_checkout_query = null, <a href="../../../GingTeam/Telegram/Type/Poll.html"><abbr title="GingTeam\Telegram\Type\Poll">Poll</abbr></a>|null $poll = null, <a href="../../../GingTeam/Telegram/Type/PollAnswer.html"><abbr title="GingTeam\Telegram\Type\PollAnswer">PollAnswer</abbr></a>|null $poll_answer = null, <a href="../../../GingTeam/Telegram/Type/ChatMemberUpdated.html"><abbr title="GingTeam\Telegram\Type\ChatMemberUpdated">ChatMemberUpdated</abbr></a>|null $my_chat_member = null, <a href="../../../GingTeam/Telegram/Type/ChatMemberUpdated.html"><abbr title="GingTeam\Telegram\Type\ChatMemberUpdated">ChatMemberUpdated</abbr></a>|null $chat_member = null, <a href="../../../GingTeam/Telegram/Type/ChatJoinRequest.html"><abbr title="GingTeam\Telegram\Type\ChatJoinRequest">ChatJoinRequest</abbr></a>|null $chat_join_request = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getUpdateId">getUpdateId</a>()
+        
+                                            <p><p>The update's unique identifier. Update identifiers start from a certain positive number and increase sequentially. This ID becomes especially handy if you're using webhooks, since it allows you to ignore repeated updates or to restore the correct update sequence, should they get out of order. If there are no new updates for at least a week, then identifier of the next update will be chosen randomly instead of sequentially.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\Message">Message</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getMessage">getMessage</a>()
+        
+                                            <p><p>Optional. New incoming message of any kind - text, photo, sticker, etc.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\Message">Message</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getEditedMessage">getEditedMessage</a>()
+        
+                                            <p><p>Optional. New version of a message that is known to the bot and was edited.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\Message">Message</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getChannelPost">getChannelPost</a>()
+        
+                                            <p><p>Optional. New incoming channel post of any kind - text, photo, sticker, etc.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\Message">Message</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getEditedChannelPost">getEditedChannelPost</a>()
+        
+                                            <p><p>Optional. New version of a channel post that is known to the bot and was edited.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\InlineQuery">InlineQuery</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getInlineQuery">getInlineQuery</a>()
+        
+                                            <p><p>Optional. New incoming inline query.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\ChosenInlineResult">ChosenInlineResult</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getChosenInlineResult">getChosenInlineResult</a>()
+        
+                                            <p><p>Optional. The result of an inline query that was chosen by a user and sent to their chat partner. Please see our documentation on the feedback collecting for details on how to enable these updates for your bot.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\CallbackQuery">CallbackQuery</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCallbackQuery">getCallbackQuery</a>()
+        
+                                            <p><p>Optional. New incoming callback query.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\ShippingQuery">ShippingQuery</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getShippingQuery">getShippingQuery</a>()
+        
+                                            <p><p>Optional. New incoming shipping query. Only for invoices with flexible price.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\PreCheckoutQuery">PreCheckoutQuery</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPreCheckoutQuery">getPreCheckoutQuery</a>()
+        
+                                            <p><p>Optional. New incoming pre-checkout query. Contains full information about checkout.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\Poll">Poll</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPoll">getPoll</a>()
+        
+                                            <p><p>Optional. New poll state. Bots receive only updates about stopped polls and polls, which are sent by the bot.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\PollAnswer">PollAnswer</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPollAnswer">getPollAnswer</a>()
+        
+                                            <p><p>Optional. A user changed their answer in a non-anonymous poll. Bots receive new votes only in polls that were sent by the bot itself.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\ChatMemberUpdated">ChatMemberUpdated</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getMyChatMember">getMyChatMember</a>()
+        
+                                            <p><p>Optional. The bot's chat member status was updated in a chat. For private chats, this update is received only when the bot is blocked or unblocked by the user.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\ChatMemberUpdated">ChatMemberUpdated</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getChatMember">getChatMember</a>()
+        
+                                            <p><p>Optional. A chat member's status was updated in a chat. The bot must be an administrator in the chat and must explicitly specify “chat_member” in the list of allowed_updates to receive these updates.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\ChatJoinRequest">ChatJoinRequest</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getChatJoinRequest">getChatJoinRequest</a>()
+        
+                                            <p><p>Optional. A request to join the chat has been sent. The bot must have the can_invite_users administrator right in the chat to receive these updates.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 27</div>
+        <code>                    
+    <strong>__construct</strong>(int $update_id, <a href="../../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>|null $message = null, <a href="../../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>|null $edited_message = null, <a href="../../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>|null $channel_post = null, <a href="../../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>|null $edited_channel_post = null, <a href="../../../GingTeam/Telegram/Type/InlineQuery.html"><abbr title="GingTeam\Telegram\Type\InlineQuery">InlineQuery</abbr></a>|null $inline_query = null, <a href="../../../GingTeam/Telegram/Type/ChosenInlineResult.html"><abbr title="GingTeam\Telegram\Type\ChosenInlineResult">ChosenInlineResult</abbr></a>|null $chosen_inline_result = null, <a href="../../../GingTeam/Telegram/Type/CallbackQuery.html"><abbr title="GingTeam\Telegram\Type\CallbackQuery">CallbackQuery</abbr></a>|null $callback_query = null, <a href="../../../GingTeam/Telegram/Type/ShippingQuery.html"><abbr title="GingTeam\Telegram\Type\ShippingQuery">ShippingQuery</abbr></a>|null $shipping_query = null, <a href="../../../GingTeam/Telegram/Type/PreCheckoutQuery.html"><abbr title="GingTeam\Telegram\Type\PreCheckoutQuery">PreCheckoutQuery</abbr></a>|null $pre_checkout_query = null, <a href="../../../GingTeam/Telegram/Type/Poll.html"><abbr title="GingTeam\Telegram\Type\Poll">Poll</abbr></a>|null $poll = null, <a href="../../../GingTeam/Telegram/Type/PollAnswer.html"><abbr title="GingTeam\Telegram\Type\PollAnswer">PollAnswer</abbr></a>|null $poll_answer = null, <a href="../../../GingTeam/Telegram/Type/ChatMemberUpdated.html"><abbr title="GingTeam\Telegram\Type\ChatMemberUpdated">ChatMemberUpdated</abbr></a>|null $my_chat_member = null, <a href="../../../GingTeam/Telegram/Type/ChatMemberUpdated.html"><abbr title="GingTeam\Telegram\Type\ChatMemberUpdated">ChatMemberUpdated</abbr></a>|null $chat_member = null, <a href="../../../GingTeam/Telegram/Type/ChatJoinRequest.html"><abbr title="GingTeam\Telegram\Type\ChatJoinRequest">ChatJoinRequest</abbr></a>|null $chat_join_request = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$update_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>|null</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>|null</td>
+                <td>$edited_message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>|null</td>
+                <td>$channel_post</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>|null</td>
+                <td>$edited_channel_post</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../GingTeam/Telegram/Type/InlineQuery.html"><abbr title="GingTeam\Telegram\Type\InlineQuery">InlineQuery</abbr></a>|null</td>
+                <td>$inline_query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../GingTeam/Telegram/Type/ChosenInlineResult.html"><abbr title="GingTeam\Telegram\Type\ChosenInlineResult">ChosenInlineResult</abbr></a>|null</td>
+                <td>$chosen_inline_result</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../GingTeam/Telegram/Type/CallbackQuery.html"><abbr title="GingTeam\Telegram\Type\CallbackQuery">CallbackQuery</abbr></a>|null</td>
+                <td>$callback_query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../GingTeam/Telegram/Type/ShippingQuery.html"><abbr title="GingTeam\Telegram\Type\ShippingQuery">ShippingQuery</abbr></a>|null</td>
+                <td>$shipping_query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../GingTeam/Telegram/Type/PreCheckoutQuery.html"><abbr title="GingTeam\Telegram\Type\PreCheckoutQuery">PreCheckoutQuery</abbr></a>|null</td>
+                <td>$pre_checkout_query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../GingTeam/Telegram/Type/Poll.html"><abbr title="GingTeam\Telegram\Type\Poll">Poll</abbr></a>|null</td>
+                <td>$poll</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../GingTeam/Telegram/Type/PollAnswer.html"><abbr title="GingTeam\Telegram\Type\PollAnswer">PollAnswer</abbr></a>|null</td>
+                <td>$poll_answer</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../GingTeam/Telegram/Type/ChatMemberUpdated.html"><abbr title="GingTeam\Telegram\Type\ChatMemberUpdated">ChatMemberUpdated</abbr></a>|null</td>
+                <td>$my_chat_member</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../GingTeam/Telegram/Type/ChatMemberUpdated.html"><abbr title="GingTeam\Telegram\Type\ChatMemberUpdated">ChatMemberUpdated</abbr></a>|null</td>
+                <td>$chat_member</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../GingTeam/Telegram/Type/ChatJoinRequest.html"><abbr title="GingTeam\Telegram\Type\ChatJoinRequest">ChatJoinRequest</abbr></a>|null</td>
+                <td>$chat_join_request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUpdateId">
+        <div class="location">at line 49</div>
+        <code>                    int
+    <strong>getUpdateId</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>The update's unique identifier. Update identifiers start from a certain positive number and increase sequentially. This ID becomes especially handy if you're using webhooks, since it allows you to ignore repeated updates or to restore the correct update sequence, should they get out of order. If there are no new updates for at least a week, then identifier of the next update will be chosen randomly instead of sequentially.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMessage">
+        <div class="location">at line 57</div>
+        <code>                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\Message">Message</abbr>|null
+    <strong>getMessage</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Optional. New incoming message of any kind - text, photo, sticker, etc.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\Message">Message</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEditedMessage">
+        <div class="location">at line 65</div>
+        <code>                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\Message">Message</abbr>|null
+    <strong>getEditedMessage</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Optional. New version of a message that is known to the bot and was edited.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\Message">Message</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getChannelPost">
+        <div class="location">at line 73</div>
+        <code>                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\Message">Message</abbr>|null
+    <strong>getChannelPost</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Optional. New incoming channel post of any kind - text, photo, sticker, etc.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\Message">Message</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEditedChannelPost">
+        <div class="location">at line 81</div>
+        <code>                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\Message">Message</abbr>|null
+    <strong>getEditedChannelPost</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Optional. New version of a channel post that is known to the bot and was edited.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\Message">Message</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInlineQuery">
+        <div class="location">at line 89</div>
+        <code>                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\InlineQuery">InlineQuery</abbr>|null
+    <strong>getInlineQuery</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Optional. New incoming inline query.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\InlineQuery">InlineQuery</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getChosenInlineResult">
+        <div class="location">at line 97</div>
+        <code>                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\ChosenInlineResult">ChosenInlineResult</abbr>|null
+    <strong>getChosenInlineResult</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Optional. The result of an inline query that was chosen by a user and sent to their chat partner. Please see our documentation on the feedback collecting for details on how to enable these updates for your bot.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\ChosenInlineResult">ChosenInlineResult</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCallbackQuery">
+        <div class="location">at line 105</div>
+        <code>                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\CallbackQuery">CallbackQuery</abbr>|null
+    <strong>getCallbackQuery</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Optional. New incoming callback query.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\CallbackQuery">CallbackQuery</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getShippingQuery">
+        <div class="location">at line 113</div>
+        <code>                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\ShippingQuery">ShippingQuery</abbr>|null
+    <strong>getShippingQuery</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Optional. New incoming shipping query. Only for invoices with flexible price.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\ShippingQuery">ShippingQuery</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPreCheckoutQuery">
+        <div class="location">at line 121</div>
+        <code>                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\PreCheckoutQuery">PreCheckoutQuery</abbr>|null
+    <strong>getPreCheckoutQuery</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Optional. New incoming pre-checkout query. Contains full information about checkout.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\PreCheckoutQuery">PreCheckoutQuery</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPoll">
+        <div class="location">at line 129</div>
+        <code>                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\Poll">Poll</abbr>|null
+    <strong>getPoll</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Optional. New poll state. Bots receive only updates about stopped polls and polls, which are sent by the bot.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\Poll">Poll</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPollAnswer">
+        <div class="location">at line 137</div>
+        <code>                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\PollAnswer">PollAnswer</abbr>|null
+    <strong>getPollAnswer</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Optional. A user changed their answer in a non-anonymous poll. Bots receive new votes only in polls that were sent by the bot itself.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\PollAnswer">PollAnswer</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMyChatMember">
+        <div class="location">at line 145</div>
+        <code>                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\ChatMemberUpdated">ChatMemberUpdated</abbr>|null
+    <strong>getMyChatMember</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Optional. The bot's chat member status was updated in a chat. For private chats, this update is received only when the bot is blocked or unblocked by the user.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\ChatMemberUpdated">ChatMemberUpdated</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getChatMember">
+        <div class="location">at line 153</div>
+        <code>                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\ChatMemberUpdated">ChatMemberUpdated</abbr>|null
+    <strong>getChatMember</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Optional. A chat member's status was updated in a chat. The bot must be an administrator in the chat and must explicitly specify “chat_member” in the list of allowed_updates to receive these updates.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\ChatMemberUpdated">ChatMemberUpdated</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getChatJoinRequest">
+        <div class="location">at line 161</div>
+        <code>                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\ChatJoinRequest">ChatJoinRequest</abbr>|null
+    <strong>getChatJoinRequest</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Optional. A request to join the chat has been sent. The bot must have the can_invite_users administrator right in the chat to receive these updates.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\ChatJoinRequest">ChatJoinRequest</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

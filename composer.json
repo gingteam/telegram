@@ -21,6 +21,7 @@
         "friendsofphp/php-cs-fixer": "^3.13",
         "symfony/var-dumper": "^6.2",
         "nette/php-generator": "^4.0",
-        "vimeo/psalm": "^5.4"
+        "vimeo/psalm": "^5.4",
+        "code-lts/doctum": "^5.5"
     }
 }

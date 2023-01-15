@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>GingTeam\Telegram\Type\InlineQueryResultDocument | Telegram API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../doctum.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:GingTeam_Telegram_Type_InlineQueryResultDocument" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Telegram API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../GingTeam.html">GingTeam</a></li><li class="backslash">\</li><li><a href="../../../GingTeam/Telegram.html">Telegram</a></li><li class="backslash">\</li><li><a href="../../../GingTeam/Telegram/Type.html">Type</a></li><li class="backslash">\</li><li>InlineQueryResultDocument</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>InlineQueryResultDocument    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>InlineQueryResultDocument</strong>        implements        <a href="../../../GingTeam/Telegram/Type/InlineQueryResultInterface.html"><abbr title="GingTeam\Telegram\Type\InlineQueryResultInterface">InlineQueryResultInterface</abbr></a>
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>Represents a link to a file. By default, this file will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the file. Currently, only .PDF and .ZIP files can be sent using this method.</p></p>                    </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>(string $type, string $id, string $title, string $document_url, string $mime_type, string|null $caption = null, string|null $parse_mode = null, <a href="../../../GingTeam/Telegram/Type/MessageEntity.html"><abbr title="GingTeam\Telegram\Type\MessageEntity">MessageEntity</abbr></a>[]|null $caption_entities = null, string|null $description = null, <a href="../../../GingTeam/Telegram/Type/InlineKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr></a>|null $reply_markup = null, <a href="../../../GingTeam/Telegram/Type/InputMessageContentInterface.html"><abbr title="GingTeam\Telegram\Type\InputMessageContentInterface">InputMessageContentInterface</abbr></a>|null $input_message_content = null, string|null $thumb_url = null, int|null $thumb_width = null, int|null $thumb_height = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getType">getType</a>()
+        
+                                            <p><p>Type of the result, must be document.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getId">getId</a>()
+        
+                                            <p><p>Unique identifier for this result, 1-64 bytes.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getTitle">getTitle</a>()
+        
+                                            <p><p>Title for the result.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDocumentUrl">getDocumentUrl</a>()
+        
+                                            <p><p>A valid URL for the file.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getMimeType">getMimeType</a>()
+        
+                                            <p><p>MIME type of the content of the file, either “application/pdf” or “application/zip”.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCaption">getCaption</a>()
+        
+                                            <p><p>Optional. Caption of the document to be sent, 0-1024 characters after entities parsing.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getParseMode">getParseMode</a>()
+        
+                                            <p><p>Optional. Mode for parsing entities in the document caption. See formatting options for more details.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCaptionEntities">getCaptionEntities</a>()
+        
+                                            <p><p>Optional. List of special entities that appear in the caption, which can be specified instead of parse_mode.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDescription">getDescription</a>()
+        
+                                            <p><p>Optional. Short description of the result.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getReplyMarkup">getReplyMarkup</a>()
+        
+                                            <p><p>Optional. Inline keyboard attached to the message.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\InputMessageContentInterface">InputMessageContentInterface</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getInputMessageContent">getInputMessageContent</a>()
+        
+                                            <p><p>Optional. Content of the message to be sent instead of the file.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getThumbUrl">getThumbUrl</a>()
+        
+                                            <p><p>Optional. URL of the thumbnail (JPEG only) for the file.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getThumbWidth">getThumbWidth</a>()
+        
+                                            <p><p>Optional. Thumbnail width.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getThumbHeight">getThumbHeight</a>()
+        
+                                            <p><p>Optional. Thumbnail height.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 26</div>
+        <code>                    
+    <strong>__construct</strong>(string $type, string $id, string $title, string $document_url, string $mime_type, string|null $caption = null, string|null $parse_mode = null, <a href="../../../GingTeam/Telegram/Type/MessageEntity.html"><abbr title="GingTeam\Telegram\Type\MessageEntity">MessageEntity</abbr></a>[]|null $caption_entities = null, string|null $description = null, <a href="../../../GingTeam/Telegram/Type/InlineKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr></a>|null $reply_markup = null, <a href="../../../GingTeam/Telegram/Type/InputMessageContentInterface.html"><abbr title="GingTeam\Telegram\Type\InputMessageContentInterface">InputMessageContentInterface</abbr></a>|null $input_message_content = null, string|null $thumb_url = null, int|null $thumb_width = null, int|null $thumb_height = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$title</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$document_url</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$mime_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$caption</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$parse_mode</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../GingTeam/Telegram/Type/MessageEntity.html"><abbr title="GingTeam\Telegram\Type\MessageEntity">MessageEntity</abbr></a>[]|null</td>
+                <td>$caption_entities</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$description</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../GingTeam/Telegram/Type/InlineKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr></a>|null</td>
+                <td>$reply_markup</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../GingTeam/Telegram/Type/InputMessageContentInterface.html"><abbr title="GingTeam\Telegram\Type\InputMessageContentInterface">InputMessageContentInterface</abbr></a>|null</td>
+                <td>$input_message_content</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$thumb_url</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$thumb_width</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$thumb_height</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getType">
+        <div class="location">at line 47</div>
+        <code>                    string
+    <strong>getType</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Type of the result, must be document.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getId">
+        <div class="location">at line 55</div>
+        <code>                    string
+    <strong>getId</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Unique identifier for this result, 1-64 bytes.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTitle">
+        <div class="location">at line 63</div>
+        <code>                    string
+    <strong>getTitle</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Title for the result.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDocumentUrl">
+        <div class="location">at line 71</div>
+        <code>                    string
+    <strong>getDocumentUrl</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>A valid URL for the file.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMimeType">
+        <div class="location">at line 79</div>
+        <code>                    string
+    <strong>getMimeType</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>MIME type of the content of the file, either “application/pdf” or “application/zip”.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCaption">
+        <div class="location">at line 87</div>
+        <code>                    string|null
+    <strong>getCaption</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Optional. Caption of the document to be sent, 0-1024 characters after entities parsing.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getParseMode">
+        <div class="location">at line 95</div>
+        <code>                    string|null
+    <strong>getParseMode</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Optional. Mode for parsing entities in the document caption. See formatting options for more details.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCaptionEntities">
+        <div class="location">at line 105</div>
+        <code>                    array|null
+    <strong>getCaptionEntities</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Optional. List of special entities that appear in the caption, which can be specified instead of parse_mode.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDescription">
+        <div class="location">at line 113</div>
+        <code>                    string|null
+    <strong>getDescription</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Optional. Short description of the result.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReplyMarkup">
+        <div class="location">at line 121</div>
+        <code>                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr>|null
+    <strong>getReplyMarkup</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Optional. Inline keyboard attached to the message.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInputMessageContent">
+        <div class="location">at line 129</div>
+        <code>                    <abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\InputMessageContentInterface">InputMessageContentInterface</abbr>|null
+    <strong>getInputMessageContent</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Optional. Content of the message to be sent instead of the file.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="GingTeam\Telegram\Type\GingTeam\Telegram\Type\InputMessageContentInterface">InputMessageContentInterface</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getThumbUrl">
+        <div class="location">at line 137</div>
+        <code>                    string|null
+    <strong>getThumbUrl</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Optional. URL of the thumbnail (JPEG only) for the file.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getThumbWidth">
+        <div class="location">at line 145</div>
+        <code>                    int|null
+    <strong>getThumbWidth</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Optional. Thumbnail width.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getThumbHeight">
+        <div class="location">at line 153</div>
+        <code>                    int|null
+    <strong>getThumbHeight</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Optional. Thumbnail height.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>
