@@ -6,6 +6,8 @@
             "email": "thanh1101dev@gmail.com"
         }
     ],
+    "description": "Telegram's collection of data types and methods",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "GingTeam\\Telegram\\": "src/"
