@@ -1,3 +1,9 @@
+This package provides Telegram data types and methods
+
+![](https://shepherd.dev/github/gingteam/telegram/coverage.svg)
+![](https://shepherd.dev/github/gingteam/telegram/level.svg)
+[![Test](https://github.com/gingteam/telegram/actions/workflows/test.yml/badge.svg)](https://github.com/gingteam/telegram/actions/workflows/test.yml)
+
 ## Example
 
 You can implement your own object class:
