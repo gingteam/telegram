@@ -95,6 +95,18 @@
 
             
         
+            <h2>Constants</h2>    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                                                                                                        BOT_API_URL
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
     
     
             <h2>Methods</h2>
@@ -1132,7 +1144,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_sendRequest">
-        <div class="location">at line 45</div>
+        <div class="location">at line 47</div>
         <code>    abstract                
     <strong>sendRequest</strong>(string $name, array $data = [])
         </code>
@@ -1171,7 +1183,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getUpdates">
-        <div class="location">at line 54</div>
+        <div class="location">at line 56</div>
         <code>                    array
     <strong>getUpdates</strong>(int|null $offset = null, int|null $limit = null, int|null $timeout = null, array|null $allowed_updates = null)
         </code>
@@ -1228,7 +1240,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setWebhook">
-        <div class="location">at line 65</div>
+        <div class="location">at line 67</div>
         <code>                    bool
     <strong>setWebhook</strong>(string $url, <abbr title="GingTeam\Telegram\GingTeam\Telegram\Type\InputFileInterface">InputFileInterface</abbr>|null $certificate = null, string|null $ip_address = null, int|null $max_connections = null, array|null $allowed_updates = null, bool|null $drop_pending_updates = null, string|null $secret_token = null)
         </code>
@@ -1300,7 +1312,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteWebhook">
-        <div class="location">at line 80</div>
+        <div class="location">at line 82</div>
         <code>                    bool
     <strong>deleteWebhook</strong>(bool|null $drop_pending_updates = null)
         </code>
@@ -1342,7 +1354,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getWebhookInfo">
-        <div class="location">at line 88</div>
+        <div class="location">at line 90</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/WebhookInfo.html"><abbr title="GingTeam\Telegram\Type\WebhookInfo">WebhookInfo</abbr></a>
     <strong>getWebhookInfo</strong>()
         </code>
@@ -1374,7 +1386,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getMe">
-        <div class="location">at line 96</div>
+        <div class="location">at line 98</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/User.html"><abbr title="GingTeam\Telegram\Type\User">User</abbr></a>
     <strong>getMe</strong>()
         </code>
@@ -1406,7 +1418,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_logOut">
-        <div class="location">at line 104</div>
+        <div class="location">at line 106</div>
         <code>                    bool
     <strong>logOut</strong>()
         </code>
@@ -1438,7 +1450,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_close">
-        <div class="location">at line 112</div>
+        <div class="location">at line 114</div>
         <code>                    bool
     <strong>close</strong>()
         </code>
@@ -1470,7 +1482,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_sendMessage">
-        <div class="location">at line 124</div>
+        <div class="location">at line 126</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>
     <strong>sendMessage</strong>(int|string $chat_id, string $text, int|null $message_thread_id = null, string|null $parse_mode = null, array|null $entities = null, bool|null $disable_web_page_preview = null, bool|null $disable_notification = null, bool|null $protect_content = null, int|null $reply_to_message_id = null, bool|null $allow_sending_without_reply = null, <a href="../../GingTeam/Telegram/Type/InlineKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardMarkup">ReplyKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardRemove.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardRemove">ReplyKeyboardRemove</abbr></a>|<a href="../../GingTeam/Telegram/Type/ForceReply.html"><abbr title="GingTeam\Telegram\Type\ForceReply">ForceReply</abbr></a>|null $reply_markup = null)
         </code>
@@ -1562,7 +1574,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_forwardMessage">
-        <div class="location">at line 146</div>
+        <div class="location">at line 148</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>
     <strong>forwardMessage</strong>(int|string $chat_id, int|string $from_chat_id, int $message_id, int|null $message_thread_id = null, bool|null $disable_notification = null, bool|null $protect_content = null)
         </code>
@@ -1629,7 +1641,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_copyMessage">
-        <div class="location">at line 165</div>
+        <div class="location">at line 167</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/MessageId.html"><abbr title="GingTeam\Telegram\Type\MessageId">MessageId</abbr></a>
     <strong>copyMessage</strong>(int|string $chat_id, int|string $from_chat_id, int $message_id, int|null $message_thread_id = null, string|null $caption = null, string|null $parse_mode = null, array|null $caption_entities = null, bool|null $disable_notification = null, bool|null $protect_content = null, int|null $reply_to_message_id = null, bool|null $allow_sending_without_reply = null, <a href="../../GingTeam/Telegram/Type/InlineKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardMarkup">ReplyKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardRemove.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardRemove">ReplyKeyboardRemove</abbr></a>|<a href="../../GingTeam/Telegram/Type/ForceReply.html"><abbr title="GingTeam\Telegram\Type\ForceReply">ForceReply</abbr></a>|null $reply_markup = null)
         </code>
@@ -1726,7 +1738,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_sendPhoto">
-        <div class="location">at line 190</div>
+        <div class="location">at line 192</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>
     <strong>sendPhoto</strong>(int|string $chat_id, <a href="../../GingTeam/Telegram/Type/InputFileInterface.html"><abbr title="GingTeam\Telegram\Type\InputFileInterface">InputFileInterface</abbr></a>|string $photo, int|null $message_thread_id = null, string|null $caption = null, string|null $parse_mode = null, array|null $caption_entities = null, bool|null $has_spoiler = null, bool|null $disable_notification = null, bool|null $protect_content = null, int|null $reply_to_message_id = null, bool|null $allow_sending_without_reply = null, <a href="../../GingTeam/Telegram/Type/InlineKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardMarkup">ReplyKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardRemove.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardRemove">ReplyKeyboardRemove</abbr></a>|<a href="../../GingTeam/Telegram/Type/ForceReply.html"><abbr title="GingTeam\Telegram\Type\ForceReply">ForceReply</abbr></a>|null $reply_markup = null)
         </code>
@@ -1823,7 +1835,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_sendAudio">
-        <div class="location">at line 217</div>
+        <div class="location">at line 219</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>
     <strong>sendAudio</strong>(int|string $chat_id, <a href="../../GingTeam/Telegram/Type/InputFileInterface.html"><abbr title="GingTeam\Telegram\Type\InputFileInterface">InputFileInterface</abbr></a>|string $audio, int|null $message_thread_id = null, string|null $caption = null, string|null $parse_mode = null, array|null $caption_entities = null, int|null $duration = null, string|null $performer = null, string|null $title = null, <a href="../../GingTeam/Telegram/Type/InputFileInterface.html"><abbr title="GingTeam\Telegram\Type\InputFileInterface">InputFileInterface</abbr></a>|string|null $thumb = null, bool|null $disable_notification = null, bool|null $protect_content = null, int|null $reply_to_message_id = null, bool|null $allow_sending_without_reply = null, <a href="../../GingTeam/Telegram/Type/InlineKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardMarkup">ReplyKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardRemove.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardRemove">ReplyKeyboardRemove</abbr></a>|<a href="../../GingTeam/Telegram/Type/ForceReply.html"><abbr title="GingTeam\Telegram\Type\ForceReply">ForceReply</abbr></a>|null $reply_markup = null)
         </code>
@@ -1935,7 +1947,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_sendDocument">
-        <div class="location">at line 246</div>
+        <div class="location">at line 248</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>
     <strong>sendDocument</strong>(int|string $chat_id, <a href="../../GingTeam/Telegram/Type/InputFileInterface.html"><abbr title="GingTeam\Telegram\Type\InputFileInterface">InputFileInterface</abbr></a>|string $document, int|null $message_thread_id = null, <a href="../../GingTeam/Telegram/Type/InputFileInterface.html"><abbr title="GingTeam\Telegram\Type\InputFileInterface">InputFileInterface</abbr></a>|string|null $thumb = null, string|null $caption = null, string|null $parse_mode = null, array|null $caption_entities = null, bool|null $disable_content_type_detection = null, bool|null $disable_notification = null, bool|null $protect_content = null, int|null $reply_to_message_id = null, bool|null $allow_sending_without_reply = null, <a href="../../GingTeam/Telegram/Type/InlineKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardMarkup">ReplyKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardRemove.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardRemove">ReplyKeyboardRemove</abbr></a>|<a href="../../GingTeam/Telegram/Type/ForceReply.html"><abbr title="GingTeam\Telegram\Type\ForceReply">ForceReply</abbr></a>|null $reply_markup = null)
         </code>
@@ -2037,7 +2049,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_sendVideo">
-        <div class="location">at line 273</div>
+        <div class="location">at line 275</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>
     <strong>sendVideo</strong>(int|string $chat_id, <a href="../../GingTeam/Telegram/Type/InputFileInterface.html"><abbr title="GingTeam\Telegram\Type\InputFileInterface">InputFileInterface</abbr></a>|string $video, int|null $message_thread_id = null, int|null $duration = null, int|null $width = null, int|null $height = null, <a href="../../GingTeam/Telegram/Type/InputFileInterface.html"><abbr title="GingTeam\Telegram\Type\InputFileInterface">InputFileInterface</abbr></a>|string|null $thumb = null, string|null $caption = null, string|null $parse_mode = null, array|null $caption_entities = null, bool|null $has_spoiler = null, bool|null $supports_streaming = null, bool|null $disable_notification = null, bool|null $protect_content = null, int|null $reply_to_message_id = null, bool|null $allow_sending_without_reply = null, <a href="../../GingTeam/Telegram/Type/InlineKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardMarkup">ReplyKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardRemove.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardRemove">ReplyKeyboardRemove</abbr></a>|<a href="../../GingTeam/Telegram/Type/ForceReply.html"><abbr title="GingTeam\Telegram\Type\ForceReply">ForceReply</abbr></a>|null $reply_markup = null)
         </code>
@@ -2159,7 +2171,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_sendAnimation">
-        <div class="location">at line 304</div>
+        <div class="location">at line 306</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>
     <strong>sendAnimation</strong>(int|string $chat_id, <a href="../../GingTeam/Telegram/Type/InputFileInterface.html"><abbr title="GingTeam\Telegram\Type\InputFileInterface">InputFileInterface</abbr></a>|string $animation, int|null $message_thread_id = null, int|null $duration = null, int|null $width = null, int|null $height = null, <a href="../../GingTeam/Telegram/Type/InputFileInterface.html"><abbr title="GingTeam\Telegram\Type\InputFileInterface">InputFileInterface</abbr></a>|string|null $thumb = null, string|null $caption = null, string|null $parse_mode = null, array|null $caption_entities = null, bool|null $has_spoiler = null, bool|null $disable_notification = null, bool|null $protect_content = null, int|null $reply_to_message_id = null, bool|null $allow_sending_without_reply = null, <a href="../../GingTeam/Telegram/Type/InlineKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardMarkup">ReplyKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardRemove.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardRemove">ReplyKeyboardRemove</abbr></a>|<a href="../../GingTeam/Telegram/Type/ForceReply.html"><abbr title="GingTeam\Telegram\Type\ForceReply">ForceReply</abbr></a>|null $reply_markup = null)
         </code>
@@ -2276,7 +2288,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_sendVoice">
-        <div class="location">at line 333</div>
+        <div class="location">at line 335</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>
     <strong>sendVoice</strong>(int|string $chat_id, <a href="../../GingTeam/Telegram/Type/InputFileInterface.html"><abbr title="GingTeam\Telegram\Type\InputFileInterface">InputFileInterface</abbr></a>|string $voice, int|null $message_thread_id = null, string|null $caption = null, string|null $parse_mode = null, array|null $caption_entities = null, int|null $duration = null, bool|null $disable_notification = null, bool|null $protect_content = null, int|null $reply_to_message_id = null, bool|null $allow_sending_without_reply = null, <a href="../../GingTeam/Telegram/Type/InlineKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardMarkup">ReplyKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardRemove.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardRemove">ReplyKeyboardRemove</abbr></a>|<a href="../../GingTeam/Telegram/Type/ForceReply.html"><abbr title="GingTeam\Telegram\Type\ForceReply">ForceReply</abbr></a>|null $reply_markup = null)
         </code>
@@ -2373,7 +2385,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_sendVideoNote">
-        <div class="location">at line 358</div>
+        <div class="location">at line 360</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>
     <strong>sendVideoNote</strong>(int|string $chat_id, <a href="../../GingTeam/Telegram/Type/InputFileInterface.html"><abbr title="GingTeam\Telegram\Type\InputFileInterface">InputFileInterface</abbr></a>|string $video_note, int|null $message_thread_id = null, int|null $duration = null, int|null $length = null, <a href="../../GingTeam/Telegram/Type/InputFileInterface.html"><abbr title="GingTeam\Telegram\Type\InputFileInterface">InputFileInterface</abbr></a>|string|null $thumb = null, bool|null $disable_notification = null, bool|null $protect_content = null, int|null $reply_to_message_id = null, bool|null $allow_sending_without_reply = null, <a href="../../GingTeam/Telegram/Type/InlineKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardMarkup">ReplyKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardRemove.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardRemove">ReplyKeyboardRemove</abbr></a>|<a href="../../GingTeam/Telegram/Type/ForceReply.html"><abbr title="GingTeam\Telegram\Type\ForceReply">ForceReply</abbr></a>|null $reply_markup = null)
         </code>
@@ -2465,7 +2477,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_sendMediaGroup">
-        <div class="location">at line 382</div>
+        <div class="location">at line 384</div>
         <code>                    array
     <strong>sendMediaGroup</strong>(int|string $chat_id, array $media, int|null $message_thread_id = null, bool|null $disable_notification = null, bool|null $protect_content = null, int|null $reply_to_message_id = null, bool|null $allow_sending_without_reply = null)
         </code>
@@ -2537,7 +2549,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_sendLocation">
-        <div class="location">at line 400</div>
+        <div class="location">at line 402</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>
     <strong>sendLocation</strong>(int|string $chat_id, float $latitude, float $longitude, int|null $message_thread_id = null, float|null $horizontal_accuracy = null, int|null $live_period = null, int|null $heading = null, int|null $proximity_alert_radius = null, bool|null $disable_notification = null, bool|null $protect_content = null, int|null $reply_to_message_id = null, bool|null $allow_sending_without_reply = null, <a href="../../GingTeam/Telegram/Type/InlineKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardMarkup">ReplyKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardRemove.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardRemove">ReplyKeyboardRemove</abbr></a>|<a href="../../GingTeam/Telegram/Type/ForceReply.html"><abbr title="GingTeam\Telegram\Type\ForceReply">ForceReply</abbr></a>|null $reply_markup = null)
         </code>
@@ -2639,7 +2651,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_editMessageLiveLocation">
-        <div class="location">at line 425</div>
+        <div class="location">at line 427</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>|bool
     <strong>editMessageLiveLocation</strong>(float $latitude, float $longitude, int|string|null $chat_id = null, int|null $message_id = null, string|null $inline_message_id = null, float|null $horizontal_accuracy = null, int|null $heading = null, int|null $proximity_alert_radius = null, <abbr title="GingTeam\Telegram\GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr>|null $reply_markup = null)
         </code>
@@ -2721,7 +2733,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_stopMessageLiveLocation">
-        <div class="location">at line 446</div>
+        <div class="location">at line 448</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>|bool
     <strong>stopMessageLiveLocation</strong>(int|string|null $chat_id = null, int|null $message_id = null, string|null $inline_message_id = null, <abbr title="GingTeam\Telegram\GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr>|null $reply_markup = null)
         </code>
@@ -2778,7 +2790,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_sendVenue">
-        <div class="location">at line 461</div>
+        <div class="location">at line 463</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>
     <strong>sendVenue</strong>(int|string $chat_id, float $latitude, float $longitude, string $title, string $address, int|null $message_thread_id = null, string|null $foursquare_id = null, string|null $foursquare_type = null, string|null $google_place_id = null, string|null $google_place_type = null, bool|null $disable_notification = null, bool|null $protect_content = null, int|null $reply_to_message_id = null, bool|null $allow_sending_without_reply = null, <a href="../../GingTeam/Telegram/Type/InlineKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardMarkup">ReplyKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardRemove.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardRemove">ReplyKeyboardRemove</abbr></a>|<a href="../../GingTeam/Telegram/Type/ForceReply.html"><abbr title="GingTeam\Telegram\Type\ForceReply">ForceReply</abbr></a>|null $reply_markup = null)
         </code>
@@ -2890,7 +2902,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_sendContact">
-        <div class="location">at line 487</div>
+        <div class="location">at line 489</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>
     <strong>sendContact</strong>(int|string $chat_id, string $phone_number, string $first_name, int|null $message_thread_id = null, string|null $last_name = null, string|null $vcard = null, bool|null $disable_notification = null, bool|null $protect_content = null, int|null $reply_to_message_id = null, bool|null $allow_sending_without_reply = null, <a href="../../GingTeam/Telegram/Type/InlineKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardMarkup">ReplyKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardRemove.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardRemove">ReplyKeyboardRemove</abbr></a>|<a href="../../GingTeam/Telegram/Type/ForceReply.html"><abbr title="GingTeam\Telegram\Type\ForceReply">ForceReply</abbr></a>|null $reply_markup = null)
         </code>
@@ -2982,7 +2994,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_sendPoll">
-        <div class="location">at line 511</div>
+        <div class="location">at line 513</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>
     <strong>sendPoll</strong>(int|string $chat_id, string $question, array $options, int|null $message_thread_id = null, bool|null $is_anonymous = null, string|null $type = null, bool|null $allows_multiple_answers = null, int|null $correct_option_id = null, string|null $explanation = null, string|null $explanation_parse_mode = null, array|null $explanation_entities = null, int|null $open_period = null, int|null $close_date = null, bool|null $is_closed = null, bool|null $disable_notification = null, bool|null $protect_content = null, int|null $reply_to_message_id = null, bool|null $allow_sending_without_reply = null, <a href="../../GingTeam/Telegram/Type/InlineKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardMarkup">ReplyKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardRemove.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardRemove">ReplyKeyboardRemove</abbr></a>|<a href="../../GingTeam/Telegram/Type/ForceReply.html"><abbr title="GingTeam\Telegram\Type\ForceReply">ForceReply</abbr></a>|null $reply_markup = null)
         </code>
@@ -3114,7 +3126,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_sendDice">
-        <div class="location">at line 541</div>
+        <div class="location">at line 543</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>
     <strong>sendDice</strong>(int|string $chat_id, int|null $message_thread_id = null, string|null $emoji = null, bool|null $disable_notification = null, bool|null $protect_content = null, int|null $reply_to_message_id = null, bool|null $allow_sending_without_reply = null, <a href="../../GingTeam/Telegram/Type/InlineKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardMarkup">ReplyKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardRemove.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardRemove">ReplyKeyboardRemove</abbr></a>|<a href="../../GingTeam/Telegram/Type/ForceReply.html"><abbr title="GingTeam\Telegram\Type\ForceReply">ForceReply</abbr></a>|null $reply_markup = null)
         </code>
@@ -3191,7 +3203,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_sendChatAction">
-        <div class="location">at line 560</div>
+        <div class="location">at line 562</div>
         <code>                    bool
     <strong>sendChatAction</strong>(int|string $chat_id, string $action, int|null $message_thread_id = null)
         </code>
@@ -3243,7 +3255,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getUserProfilePhotos">
-        <div class="location">at line 568</div>
+        <div class="location">at line 570</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/UserProfilePhotos.html"><abbr title="GingTeam\Telegram\Type\UserProfilePhotos">UserProfilePhotos</abbr></a>
     <strong>getUserProfilePhotos</strong>(int $user_id, int|null $offset = null, int|null $limit = null)
         </code>
@@ -3295,7 +3307,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getFile">
-        <div class="location">at line 577</div>
+        <div class="location">at line 579</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/File.html"><abbr title="GingTeam\Telegram\Type\File">File</abbr></a>
     <strong>getFile</strong>(string $file_id)
         </code>
@@ -3337,7 +3349,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_banChatMember">
-        <div class="location">at line 587</div>
+        <div class="location">at line 589</div>
         <code>                    bool
     <strong>banChatMember</strong>(int|string $chat_id, int $user_id, int|null $until_date = null, bool|null $revoke_messages = null)
         </code>
@@ -3394,7 +3406,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_unbanChatMember">
-        <div class="location">at line 597</div>
+        <div class="location">at line 599</div>
         <code>                    bool
     <strong>unbanChatMember</strong>(int|string $chat_id, int $user_id, bool|null $only_if_banned = null)
         </code>
@@ -3446,7 +3458,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_restrictChatMember">
-        <div class="location">at line 607</div>
+        <div class="location">at line 609</div>
         <code>                    bool
     <strong>restrictChatMember</strong>(int|string $chat_id, int $user_id, <a href="../../GingTeam/Telegram/Type/ChatPermissions.html"><abbr title="GingTeam\Telegram\Type\ChatPermissions">ChatPermissions</abbr></a> $permissions, int|null $until_date = null)
         </code>
@@ -3503,7 +3515,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_promoteChatMember">
-        <div class="location">at line 617</div>
+        <div class="location">at line 619</div>
         <code>                    bool
     <strong>promoteChatMember</strong>(int|string $chat_id, int $user_id, bool|null $is_anonymous = null, bool|null $can_manage_chat = null, bool|null $can_post_messages = null, bool|null $can_edit_messages = null, bool|null $can_delete_messages = null, bool|null $can_manage_video_chats = null, bool|null $can_restrict_members = null, bool|null $can_promote_members = null, bool|null $can_change_info = null, bool|null $can_invite_users = null, bool|null $can_pin_messages = null, bool|null $can_manage_topics = null)
         </code>
@@ -3610,7 +3622,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setChatAdministratorCustomTitle">
-        <div class="location">at line 641</div>
+        <div class="location">at line 643</div>
         <code>                    bool
     <strong>setChatAdministratorCustomTitle</strong>(int|string $chat_id, int $user_id, string $custom_title)
         </code>
@@ -3662,7 +3674,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_banChatSenderChat">
-        <div class="location">at line 651</div>
+        <div class="location">at line 653</div>
         <code>                    bool
     <strong>banChatSenderChat</strong>(int|string $chat_id, int $sender_chat_id)
         </code>
@@ -3709,7 +3721,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_unbanChatSenderChat">
-        <div class="location">at line 661</div>
+        <div class="location">at line 663</div>
         <code>                    bool
     <strong>unbanChatSenderChat</strong>(int|string $chat_id, int $sender_chat_id)
         </code>
@@ -3756,7 +3768,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setChatPermissions">
-        <div class="location">at line 671</div>
+        <div class="location">at line 673</div>
         <code>                    bool
     <strong>setChatPermissions</strong>(int|string $chat_id, <a href="../../GingTeam/Telegram/Type/ChatPermissions.html"><abbr title="GingTeam\Telegram\Type\ChatPermissions">ChatPermissions</abbr></a> $permissions)
         </code>
@@ -3803,7 +3815,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_exportChatInviteLink">
-        <div class="location">at line 681</div>
+        <div class="location">at line 683</div>
         <code>                    string
     <strong>exportChatInviteLink</strong>(int|string $chat_id)
         </code>
@@ -3845,7 +3857,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createChatInviteLink">
-        <div class="location">at line 691</div>
+        <div class="location">at line 693</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/ChatInviteLink.html"><abbr title="GingTeam\Telegram\Type\ChatInviteLink">ChatInviteLink</abbr></a>
     <strong>createChatInviteLink</strong>(int|string $chat_id, string|null $name = null, int|null $expire_date = null, int|null $member_limit = null, bool|null $creates_join_request = null)
         </code>
@@ -3907,7 +3919,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_editChatInviteLink">
-        <div class="location">at line 706</div>
+        <div class="location">at line 708</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/ChatInviteLink.html"><abbr title="GingTeam\Telegram\Type\ChatInviteLink">ChatInviteLink</abbr></a>
     <strong>editChatInviteLink</strong>(int|string $chat_id, string $invite_link, string|null $name = null, int|null $expire_date = null, int|null $member_limit = null, bool|null $creates_join_request = null)
         </code>
@@ -3974,7 +3986,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_revokeChatInviteLink">
-        <div class="location">at line 722</div>
+        <div class="location">at line 724</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/ChatInviteLink.html"><abbr title="GingTeam\Telegram\Type\ChatInviteLink">ChatInviteLink</abbr></a>
     <strong>revokeChatInviteLink</strong>(int|string $chat_id, string $invite_link)
         </code>
@@ -4021,7 +4033,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_approveChatJoinRequest">
-        <div class="location">at line 732</div>
+        <div class="location">at line 734</div>
         <code>                    bool
     <strong>approveChatJoinRequest</strong>(int|string $chat_id, int $user_id)
         </code>
@@ -4068,7 +4080,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_declineChatJoinRequest">
-        <div class="location">at line 742</div>
+        <div class="location">at line 744</div>
         <code>                    bool
     <strong>declineChatJoinRequest</strong>(int|string $chat_id, int $user_id)
         </code>
@@ -4115,7 +4127,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setChatPhoto">
-        <div class="location">at line 752</div>
+        <div class="location">at line 754</div>
         <code>                    bool
     <strong>setChatPhoto</strong>(int|string $chat_id, <a href="../../GingTeam/Telegram/Type/InputFileInterface.html"><abbr title="GingTeam\Telegram\Type\InputFileInterface">InputFileInterface</abbr></a> $photo)
         </code>
@@ -4162,7 +4174,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteChatPhoto">
-        <div class="location">at line 762</div>
+        <div class="location">at line 764</div>
         <code>                    bool
     <strong>deleteChatPhoto</strong>(int|string $chat_id)
         </code>
@@ -4204,7 +4216,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setChatTitle">
-        <div class="location">at line 772</div>
+        <div class="location">at line 774</div>
         <code>                    bool
     <strong>setChatTitle</strong>(int|string $chat_id, string $title)
         </code>
@@ -4251,7 +4263,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setChatDescription">
-        <div class="location">at line 782</div>
+        <div class="location">at line 784</div>
         <code>                    bool
     <strong>setChatDescription</strong>(int|string $chat_id, string|null $description = null)
         </code>
@@ -4298,7 +4310,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_pinChatMessage">
-        <div class="location">at line 792</div>
+        <div class="location">at line 794</div>
         <code>                    bool
     <strong>pinChatMessage</strong>(int|string $chat_id, int $message_id, bool|null $disable_notification = null)
         </code>
@@ -4350,7 +4362,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_unpinChatMessage">
-        <div class="location">at line 802</div>
+        <div class="location">at line 804</div>
         <code>                    bool
     <strong>unpinChatMessage</strong>(int|string $chat_id, int|null $message_id = null)
         </code>
@@ -4397,7 +4409,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_unpinAllChatMessages">
-        <div class="location">at line 812</div>
+        <div class="location">at line 814</div>
         <code>                    bool
     <strong>unpinAllChatMessages</strong>(int|string $chat_id)
         </code>
@@ -4439,7 +4451,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_leaveChat">
-        <div class="location">at line 822</div>
+        <div class="location">at line 824</div>
         <code>                    bool
     <strong>leaveChat</strong>(int|string $chat_id)
         </code>
@@ -4481,7 +4493,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getChat">
-        <div class="location">at line 832</div>
+        <div class="location">at line 834</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/Chat.html"><abbr title="GingTeam\Telegram\Type\Chat">Chat</abbr></a>
     <strong>getChat</strong>(int|string $chat_id)
         </code>
@@ -4523,7 +4535,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getChatAdministrators">
-        <div class="location">at line 844</div>
+        <div class="location">at line 846</div>
         <code>                    array
     <strong>getChatAdministrators</strong>(int|string $chat_id)
         </code>
@@ -4565,7 +4577,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getChatMemberCount">
-        <div class="location">at line 854</div>
+        <div class="location">at line 856</div>
         <code>                    int
     <strong>getChatMemberCount</strong>(int|string $chat_id)
         </code>
@@ -4607,7 +4619,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getChatMember">
-        <div class="location">at line 864</div>
+        <div class="location">at line 866</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/ChatMemberInterface.html"><abbr title="GingTeam\Telegram\Type\ChatMemberInterface">ChatMemberInterface</abbr></a>
     <strong>getChatMember</strong>(int|string $chat_id, int $user_id)
         </code>
@@ -4654,7 +4666,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setChatStickerSet">
-        <div class="location">at line 874</div>
+        <div class="location">at line 876</div>
         <code>                    bool
     <strong>setChatStickerSet</strong>(int|string $chat_id, string $sticker_set_name)
         </code>
@@ -4701,7 +4713,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteChatStickerSet">
-        <div class="location">at line 884</div>
+        <div class="location">at line 886</div>
         <code>                    bool
     <strong>deleteChatStickerSet</strong>(int|string $chat_id)
         </code>
@@ -4743,7 +4755,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getForumTopicIconStickers">
-        <div class="location">at line 894</div>
+        <div class="location">at line 896</div>
         <code>                    array
     <strong>getForumTopicIconStickers</strong>()
         </code>
@@ -4775,7 +4787,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createForumTopic">
-        <div class="location">at line 904</div>
+        <div class="location">at line 906</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/ForumTopic.html"><abbr title="GingTeam\Telegram\Type\ForumTopic">ForumTopic</abbr></a>
     <strong>createForumTopic</strong>(int|string $chat_id, string $name, int|null $icon_color = null, string|null $icon_custom_emoji_id = null)
         </code>
@@ -4832,7 +4844,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_editForumTopic">
-        <div class="location">at line 914</div>
+        <div class="location">at line 916</div>
         <code>                    bool
     <strong>editForumTopic</strong>(int|string $chat_id, int $message_thread_id, string|null $name = null, string|null $icon_custom_emoji_id = null)
         </code>
@@ -4889,7 +4901,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_closeForumTopic">
-        <div class="location">at line 924</div>
+        <div class="location">at line 926</div>
         <code>                    bool
     <strong>closeForumTopic</strong>(int|string $chat_id, int $message_thread_id)
         </code>
@@ -4936,7 +4948,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_reopenForumTopic">
-        <div class="location">at line 934</div>
+        <div class="location">at line 936</div>
         <code>                    bool
     <strong>reopenForumTopic</strong>(int|string $chat_id, int $message_thread_id)
         </code>
@@ -4983,7 +4995,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteForumTopic">
-        <div class="location">at line 944</div>
+        <div class="location">at line 946</div>
         <code>                    bool
     <strong>deleteForumTopic</strong>(int|string $chat_id, int $message_thread_id)
         </code>
@@ -5030,7 +5042,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_unpinAllForumTopicMessages">
-        <div class="location">at line 954</div>
+        <div class="location">at line 956</div>
         <code>                    bool
     <strong>unpinAllForumTopicMessages</strong>(int|string $chat_id, int $message_thread_id)
         </code>
@@ -5077,7 +5089,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_editGeneralForumTopic">
-        <div class="location">at line 964</div>
+        <div class="location">at line 966</div>
         <code>                    bool
     <strong>editGeneralForumTopic</strong>(int|string $chat_id, string $name)
         </code>
@@ -5124,7 +5136,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_closeGeneralForumTopic">
-        <div class="location">at line 974</div>
+        <div class="location">at line 976</div>
         <code>                    bool
     <strong>closeGeneralForumTopic</strong>(int|string $chat_id)
         </code>
@@ -5166,7 +5178,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_reopenGeneralForumTopic">
-        <div class="location">at line 984</div>
+        <div class="location">at line 986</div>
         <code>                    bool
     <strong>reopenGeneralForumTopic</strong>(int|string $chat_id)
         </code>
@@ -5208,7 +5220,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_hideGeneralForumTopic">
-        <div class="location">at line 994</div>
+        <div class="location">at line 996</div>
         <code>                    bool
     <strong>hideGeneralForumTopic</strong>(int|string $chat_id)
         </code>
@@ -5250,7 +5262,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_unhideGeneralForumTopic">
-        <div class="location">at line 1004</div>
+        <div class="location">at line 1006</div>
         <code>                    bool
     <strong>unhideGeneralForumTopic</strong>(int|string $chat_id)
         </code>
@@ -5292,7 +5304,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_answerCallbackQuery">
-        <div class="location">at line 1012</div>
+        <div class="location">at line 1014</div>
         <code>                    bool
     <strong>answerCallbackQuery</strong>(string $callback_query_id, string|null $text = null, bool|null $show_alert = null, string|null $url = null, int|null $cache_time = null)
         </code>
@@ -5354,7 +5366,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setMyCommands">
-        <div class="location">at line 1027</div>
+        <div class="location">at line 1029</div>
         <code>                    bool
     <strong>setMyCommands</strong>(array $commands, <abbr title="GingTeam\Telegram\GingTeam\Telegram\Type\BotCommandScopeInterface">BotCommandScopeInterface</abbr>|null $scope = null, string|null $language_code = null)
         </code>
@@ -5406,7 +5418,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteMyCommands">
-        <div class="location">at line 1035</div>
+        <div class="location">at line 1037</div>
         <code>                    bool
     <strong>deleteMyCommands</strong>(<abbr title="GingTeam\Telegram\GingTeam\Telegram\Type\BotCommandScopeInterface">BotCommandScopeInterface</abbr>|null $scope = null, string|null $language_code = null)
         </code>
@@ -5453,7 +5465,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getMyCommands">
-        <div class="location">at line 1045</div>
+        <div class="location">at line 1047</div>
         <code>                    array
     <strong>getMyCommands</strong>(<abbr title="GingTeam\Telegram\GingTeam\Telegram\Type\BotCommandScopeInterface">BotCommandScopeInterface</abbr>|null $scope = null, string|null $language_code = null)
         </code>
@@ -5500,7 +5512,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setChatMenuButton">
-        <div class="location">at line 1053</div>
+        <div class="location">at line 1055</div>
         <code>                    bool
     <strong>setChatMenuButton</strong>(int|null $chat_id = null, <abbr title="GingTeam\Telegram\GingTeam\Telegram\Type\MenuButtonInterface">MenuButtonInterface</abbr>|null $menu_button = null)
         </code>
@@ -5547,7 +5559,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getChatMenuButton">
-        <div class="location">at line 1061</div>
+        <div class="location">at line 1063</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/MenuButtonInterface.html"><abbr title="GingTeam\Telegram\Type\MenuButtonInterface">MenuButtonInterface</abbr></a>
     <strong>getChatMenuButton</strong>(int|null $chat_id = null)
         </code>
@@ -5589,7 +5601,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setMyDefaultAdministratorRights">
-        <div class="location">at line 1069</div>
+        <div class="location">at line 1071</div>
         <code>                    bool
     <strong>setMyDefaultAdministratorRights</strong>(<abbr title="GingTeam\Telegram\GingTeam\Telegram\Type\ChatAdministratorRights">ChatAdministratorRights</abbr>|null $rights = null, bool|null $for_channels = null)
         </code>
@@ -5636,7 +5648,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getMyDefaultAdministratorRights">
-        <div class="location">at line 1077</div>
+        <div class="location">at line 1079</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/ChatAdministratorRights.html"><abbr title="GingTeam\Telegram\Type\ChatAdministratorRights">ChatAdministratorRights</abbr></a>
     <strong>getMyDefaultAdministratorRights</strong>(bool|null $for_channels = null)
         </code>
@@ -5678,7 +5690,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_editMessageText">
-        <div class="location">at line 1090</div>
+        <div class="location">at line 1092</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>|bool
     <strong>editMessageText</strong>(string $text, int|string|null $chat_id = null, int|null $message_id = null, string|null $inline_message_id = null, string|null $parse_mode = null, array|null $entities = null, bool|null $disable_web_page_preview = null, <abbr title="GingTeam\Telegram\GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr>|null $reply_markup = null)
         </code>
@@ -5755,7 +5767,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_editMessageCaption">
-        <div class="location">at line 1111</div>
+        <div class="location">at line 1113</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>|bool
     <strong>editMessageCaption</strong>(int|string|null $chat_id = null, int|null $message_id = null, string|null $inline_message_id = null, string|null $caption = null, string|null $parse_mode = null, array|null $caption_entities = null, <abbr title="GingTeam\Telegram\GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr>|null $reply_markup = null)
         </code>
@@ -5827,7 +5839,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_editMessageMedia">
-        <div class="location">at line 1130</div>
+        <div class="location">at line 1132</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>|bool
     <strong>editMessageMedia</strong>(<a href="../../GingTeam/Telegram/Type/InputMediaInterface.html"><abbr title="GingTeam\Telegram\Type\InputMediaInterface">InputMediaInterface</abbr></a> $media, int|string|null $chat_id = null, int|null $message_id = null, string|null $inline_message_id = null, <abbr title="GingTeam\Telegram\GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr>|null $reply_markup = null)
         </code>
@@ -5889,7 +5901,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_editMessageReplyMarkup">
-        <div class="location">at line 1147</div>
+        <div class="location">at line 1149</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>|bool
     <strong>editMessageReplyMarkup</strong>(int|string|null $chat_id = null, int|null $message_id = null, string|null $inline_message_id = null, <abbr title="GingTeam\Telegram\GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr>|null $reply_markup = null)
         </code>
@@ -5946,7 +5958,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_stopPoll">
-        <div class="location">at line 1161</div>
+        <div class="location">at line 1163</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/Poll.html"><abbr title="GingTeam\Telegram\Type\Poll">Poll</abbr></a>
     <strong>stopPoll</strong>(int|string $chat_id, int $message_id, <abbr title="GingTeam\Telegram\GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr>|null $reply_markup = null)
         </code>
@@ -5998,7 +6010,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteMessage">
-        <div class="location">at line 1180</div>
+        <div class="location">at line 1182</div>
         <code>                    bool
     <strong>deleteMessage</strong>(int|string $chat_id, int $message_id)
         </code>
@@ -6057,7 +6069,7 @@ Returns True on success.</li>
             </div>
                     <div class="method-item">
                     <h3 id="method_sendSticker">
-        <div class="location">at line 1192</div>
+        <div class="location">at line 1194</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>
     <strong>sendSticker</strong>(int|string $chat_id, <a href="../../GingTeam/Telegram/Type/InputFileInterface.html"><abbr title="GingTeam\Telegram\Type\InputFileInterface">InputFileInterface</abbr></a>|string $sticker, int|null $message_thread_id = null, bool|null $disable_notification = null, bool|null $protect_content = null, int|null $reply_to_message_id = null, bool|null $allow_sending_without_reply = null, <a href="../../GingTeam/Telegram/Type/InlineKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardMarkup.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardMarkup">ReplyKeyboardMarkup</abbr></a>|<a href="../../GingTeam/Telegram/Type/ReplyKeyboardRemove.html"><abbr title="GingTeam\Telegram\Type\ReplyKeyboardRemove">ReplyKeyboardRemove</abbr></a>|<a href="../../GingTeam/Telegram/Type/ForceReply.html"><abbr title="GingTeam\Telegram\Type\ForceReply">ForceReply</abbr></a>|null $reply_markup = null)
         </code>
@@ -6134,7 +6146,7 @@ Returns True on success.</li>
             </div>
                     <div class="method-item">
                     <h3 id="method_getStickerSet">
-        <div class="location">at line 1208</div>
+        <div class="location">at line 1210</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/StickerSet.html"><abbr title="GingTeam\Telegram\Type\StickerSet">StickerSet</abbr></a>
     <strong>getStickerSet</strong>(string $name)
         </code>
@@ -6176,7 +6188,7 @@ Returns True on success.</li>
             </div>
                     <div class="method-item">
                     <h3 id="method_getCustomEmojiStickers">
-        <div class="location">at line 1220</div>
+        <div class="location">at line 1222</div>
         <code>                    array
     <strong>getCustomEmojiStickers</strong>(array $custom_emoji_ids)
         </code>
@@ -6218,7 +6230,7 @@ Returns True on success.</li>
             </div>
                     <div class="method-item">
                     <h3 id="method_uploadStickerFile">
-        <div class="location">at line 1228</div>
+        <div class="location">at line 1230</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/File.html"><abbr title="GingTeam\Telegram\Type\File">File</abbr></a>
     <strong>uploadStickerFile</strong>(int $user_id, <a href="../../GingTeam/Telegram/Type/InputFileInterface.html"><abbr title="GingTeam\Telegram\Type\InputFileInterface">InputFileInterface</abbr></a> $png_sticker)
         </code>
@@ -6265,7 +6277,7 @@ Returns True on success.</li>
             </div>
                     <div class="method-item">
                     <h3 id="method_createNewStickerSet">
-        <div class="location">at line 1238</div>
+        <div class="location">at line 1240</div>
         <code>                    bool
     <strong>createNewStickerSet</strong>(int $user_id, string $name, string $title, string $emojis, <a href="../../GingTeam/Telegram/Type/InputFileInterface.html"><abbr title="GingTeam\Telegram\Type\InputFileInterface">InputFileInterface</abbr></a>|string|null $png_sticker = null, <abbr title="GingTeam\Telegram\GingTeam\Telegram\Type\InputFileInterface">InputFileInterface</abbr>|null $tgs_sticker = null, <abbr title="GingTeam\Telegram\GingTeam\Telegram\Type\InputFileInterface">InputFileInterface</abbr>|null $webm_sticker = null, string|null $sticker_type = null, <abbr title="GingTeam\Telegram\GingTeam\Telegram\Type\MaskPosition">MaskPosition</abbr>|null $mask_position = null)
         </code>
@@ -6347,7 +6359,7 @@ Returns True on success.</li>
             </div>
                     <div class="method-item">
                     <h3 id="method_addStickerToSet">
-        <div class="location">at line 1257</div>
+        <div class="location">at line 1259</div>
         <code>                    bool
     <strong>addStickerToSet</strong>(int $user_id, string $name, string $emojis, <a href="../../GingTeam/Telegram/Type/InputFileInterface.html"><abbr title="GingTeam\Telegram\Type\InputFileInterface">InputFileInterface</abbr></a>|string|null $png_sticker = null, <abbr title="GingTeam\Telegram\GingTeam\Telegram\Type\InputFileInterface">InputFileInterface</abbr>|null $tgs_sticker = null, <abbr title="GingTeam\Telegram\GingTeam\Telegram\Type\InputFileInterface">InputFileInterface</abbr>|null $webm_sticker = null, <abbr title="GingTeam\Telegram\GingTeam\Telegram\Type\MaskPosition">MaskPosition</abbr>|null $mask_position = null)
         </code>
@@ -6419,7 +6431,7 @@ Returns True on success.</li>
             </div>
                     <div class="method-item">
                     <h3 id="method_setStickerPositionInSet">
-        <div class="location">at line 1272</div>
+        <div class="location">at line 1274</div>
         <code>                    bool
     <strong>setStickerPositionInSet</strong>(string $sticker, int $position)
         </code>
@@ -6466,7 +6478,7 @@ Returns True on success.</li>
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteStickerFromSet">
-        <div class="location">at line 1280</div>
+        <div class="location">at line 1282</div>
         <code>                    bool
     <strong>deleteStickerFromSet</strong>(string $sticker)
         </code>
@@ -6508,7 +6520,7 @@ Returns True on success.</li>
             </div>
                     <div class="method-item">
                     <h3 id="method_setStickerSetThumb">
-        <div class="location">at line 1290</div>
+        <div class="location">at line 1292</div>
         <code>                    bool
     <strong>setStickerSetThumb</strong>(string $name, int $user_id, <a href="../../GingTeam/Telegram/Type/InputFileInterface.html"><abbr title="GingTeam\Telegram\Type\InputFileInterface">InputFileInterface</abbr></a>|string|null $thumb = null)
         </code>
@@ -6560,7 +6572,7 @@ Returns True on success.</li>
             </div>
                     <div class="method-item">
                     <h3 id="method_answerInlineQuery">
-        <div class="location">at line 1301</div>
+        <div class="location">at line 1303</div>
         <code>                    bool
     <strong>answerInlineQuery</strong>(string $inline_query_id, array $results, int|null $cache_time = null, bool|null $is_personal = null, string|null $next_offset = null, string|null $switch_pm_text = null, string|null $switch_pm_parameter = null)
         </code>
@@ -6632,7 +6644,7 @@ Returns True on success.</li>
             </div>
                     <div class="method-item">
                     <h3 id="method_answerWebAppQuery">
-        <div class="location">at line 1316</div>
+        <div class="location">at line 1318</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/SentWebAppMessage.html"><abbr title="GingTeam\Telegram\Type\SentWebAppMessage">SentWebAppMessage</abbr></a>
     <strong>answerWebAppQuery</strong>(string $web_app_query_id, <a href="../../GingTeam/Telegram/Type/InlineQueryResultInterface.html"><abbr title="GingTeam\Telegram\Type\InlineQueryResultInterface">InlineQueryResultInterface</abbr></a> $result)
         </code>
@@ -6679,7 +6691,7 @@ Returns True on success.</li>
             </div>
                     <div class="method-item">
                     <h3 id="method_sendInvoice">
-        <div class="location">at line 1328</div>
+        <div class="location">at line 1330</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>
     <strong>sendInvoice</strong>(int|string $chat_id, string $title, string $description, string $payload, string $provider_token, string $currency, array $prices, int|null $message_thread_id = null, int|null $max_tip_amount = null, array|null $suggested_tip_amounts = null, string|null $start_parameter = null, string|null $provider_data = null, string|null $photo_url = null, int|null $photo_size = null, int|null $photo_width = null, int|null $photo_height = null, bool|null $need_name = null, bool|null $need_phone_number = null, bool|null $need_email = null, bool|null $need_shipping_address = null, bool|null $send_phone_number_to_provider = null, bool|null $send_email_to_provider = null, bool|null $is_flexible = null, bool|null $disable_notification = null, bool|null $protect_content = null, int|null $reply_to_message_id = null, bool|null $allow_sending_without_reply = null, <abbr title="GingTeam\Telegram\GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr>|null $reply_markup = null)
         </code>
@@ -6856,7 +6868,7 @@ Returns True on success.</li>
             </div>
                     <div class="method-item">
                     <h3 id="method_createInvoiceLink">
-        <div class="location">at line 1367</div>
+        <div class="location">at line 1369</div>
         <code>                    string
     <strong>createInvoiceLink</strong>(string $title, string $description, string $payload, string $provider_token, string $currency, array $prices, int|null $max_tip_amount = null, array|null $suggested_tip_amounts = null, string|null $provider_data = null, string|null $photo_url = null, int|null $photo_size = null, int|null $photo_width = null, int|null $photo_height = null, bool|null $need_name = null, bool|null $need_phone_number = null, bool|null $need_email = null, bool|null $need_shipping_address = null, bool|null $send_phone_number_to_provider = null, bool|null $send_email_to_provider = null, bool|null $is_flexible = null)
         </code>
@@ -6993,7 +7005,7 @@ Returns True on success.</li>
             </div>
                     <div class="method-item">
                     <h3 id="method_answerShippingQuery">
-        <div class="location">at line 1397</div>
+        <div class="location">at line 1399</div>
         <code>                    bool
     <strong>answerShippingQuery</strong>(string $shipping_query_id, bool $ok, array|null $shipping_options = null, string|null $error_message = null)
         </code>
@@ -7050,7 +7062,7 @@ Returns True on success.</li>
             </div>
                     <div class="method-item">
                     <h3 id="method_answerPreCheckoutQuery">
-        <div class="location">at line 1405</div>
+        <div class="location">at line 1407</div>
         <code>                    bool
     <strong>answerPreCheckoutQuery</strong>(string $pre_checkout_query_id, bool $ok, string|null $error_message = null)
         </code>
@@ -7102,7 +7114,7 @@ Returns True on success.</li>
             </div>
                     <div class="method-item">
                     <h3 id="method_setPassportDataErrors">
-        <div class="location">at line 1416</div>
+        <div class="location">at line 1418</div>
         <code>                    bool
     <strong>setPassportDataErrors</strong>(int $user_id, array $errors)
         </code>
@@ -7149,7 +7161,7 @@ Returns True on success.</li>
             </div>
                     <div class="method-item">
                     <h3 id="method_sendGame">
-        <div class="location">at line 1424</div>
+        <div class="location">at line 1426</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>
     <strong>sendGame</strong>(int $chat_id, string $game_short_name, int|null $message_thread_id = null, bool|null $disable_notification = null, bool|null $protect_content = null, int|null $reply_to_message_id = null, bool|null $allow_sending_without_reply = null, <abbr title="GingTeam\Telegram\GingTeam\Telegram\Type\InlineKeyboardMarkup">InlineKeyboardMarkup</abbr>|null $reply_markup = null)
         </code>
@@ -7226,7 +7238,7 @@ Returns True on success.</li>
             </div>
                     <div class="method-item">
                     <h3 id="method_setGameScore">
-        <div class="location">at line 1442</div>
+        <div class="location">at line 1444</div>
         <code>                    <a href="../../GingTeam/Telegram/Type/Message.html"><abbr title="GingTeam\Telegram\Type\Message">Message</abbr></a>|bool
     <strong>setGameScore</strong>(int $user_id, int $score, bool|null $force = null, bool|null $disable_edit_message = null, int|null $chat_id = null, int|null $message_id = null, string|null $inline_message_id = null)
         </code>
@@ -7298,7 +7310,7 @@ Returns True on success.</li>
             </div>
                     <div class="method-item">
                     <h3 id="method_getGameHighScores">
-        <div class="location">at line 1459</div>
+        <div class="location">at line 1461</div>
         <code>                    array
     <strong>getGameHighScores</strong>(int $user_id, int|null $chat_id = null, int|null $message_id = null, string|null $inline_message_id = null)
         </code>

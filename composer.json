@@ -12,6 +12,7 @@
         }
     },
     "require": {
+        "php": ">=8.1",
         "symfony/http-client": "^6.2",
         "symfony/serializer": "^6.2",
         "symfony/property-access": "^6.2"
@@ -22,6 +23,12 @@
         "symfony/var-dumper": "^6.2",
         "nette/php-generator": "^4.0",
         "vimeo/psalm": "^5.4",
-        "code-lts/doctum": "^5.5"
+        "code-lts/doctum": "^5.5",
+        "pestphp/pest": "^1.22"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     }
 }

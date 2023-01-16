@@ -42,6 +42,8 @@ use GingTeam\Telegram\Type\WebhookInfo;
 
 trait TelegramTrait
 {
+    public const BOT_API_URL = 'https://api.telegram.org';
+
     abstract public function sendRequest(string $name, array $data = []);
 
     /**
