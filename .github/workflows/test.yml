@@ -54,7 +54,7 @@ jobs:
           command: composer update --prefer-dist --no-interaction --no-progress
 
       - name: Static analysis
-        run: vendor/bin/psalm --no-cache
+        run: vendor/bin/psalm --no-cache --shepherd
 
       - name: Execute tests
         run: vendor/bin/pest
