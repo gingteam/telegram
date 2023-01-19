@@ -6,7 +6,7 @@ class Response
 {
     /**
      * @param bool                                                                                                                                                                                                                                                                          $ok
-     * @param BotCommand[]|ChatMemberInterface[]|GameHighScore[]|Message[]|Sticker[]|Update[]|Chat|ChatAdministratorRights|ChatInviteLink|ChatMemberInterface|File|ForumTopic|MenuButtonInterface|Message|MessageId|Poll|StickerSet|User|UserProfilePhotos|WebhookInfo|bool|int|string|null $result
+     * @param BotCommand[]|ChatMemberInterface[]|GameHighScore[]|Message[]|Sticker[]|Update[]|Chat|ChatInviteLink|ChatMemberInterface|ChatAdministratorRights|File|ForumTopic|MenuButtonInterface|Message|MessageId|Poll|StickerSet|User|UserProfilePhotos|WebhookInfo|bool|int|string|null $result
      * @param int|null                                                                                                                                                                                                                                                                      $error_code
      * @param string|null                                                                                                                                                                                                                                                                   $description
      */
@@ -24,7 +24,7 @@ class Response
     }
 
     /**
-     * @return BotCommand[]|ChatMemberInterface[]|GameHighScore[]|Message[]|Sticker[]|Update[]|Chat|ChatAdministratorRights|ChatInviteLink|ChatMemberInterface|File|ForumTopic|MenuButtonInterface|Message|MessageId|Poll|StickerSet|User|UserProfilePhotos|WebhookInfo|bool|int|string|null
+     * @return BotCommand[]|ChatMemberInterface[]|GameHighScore[]|Message[]|Sticker[]|Update[]|Chat|ChatInviteLink|ChatMemberInterface|ChatAdministratorRights|File|ForumTopic|MenuButtonInterface|Message|MessageId|Poll|StickerSet|User|UserProfilePhotos|WebhookInfo|bool|int|string|null
      */
     public function getResult()
     {
